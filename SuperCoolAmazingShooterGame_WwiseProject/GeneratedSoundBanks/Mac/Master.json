@@ -1,0 +1,51 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4056684167",
+    "Type": "User",
+    "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
+    "Language": "SFX",
+    "Hash": "{CA82C0F1-7366-6FF1-47E1-862F5ADDBCA8}",
+    "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
+    "ShortName": "Master",
+    "Path": "Master.bnk",
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "305077029",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\UNITYIMPLEMENTATION\\TestTone\\TestTone\\Tone Generator",
+       "GUID": "{A71FDE16-E784-4249-9A76-D3D8741AFD40}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "4283052285",
+      "Name": "TestTone",
+      "ObjectPath": "\\Events\\TestTone\\TestTone",
+      "GUID": "{4DE287D0-BE43-4D76-AE97-50C803870BC2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.1",
+      "DurationMax": "0.1",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "305077029"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6156E677-60CA-71B3-49D3-5ACCC7E20A72}"
+ }
+}
