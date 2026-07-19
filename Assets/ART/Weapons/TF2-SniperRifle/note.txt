@@ -1,0 +1,6 @@
+-- ripped by slipsy --
+
+illum tint:
+
+	RED: #ff0000 / 255,0,0
+	BLU: #0077fe / 0,119,254
