@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public enum BulletType
 {
@@ -35,6 +36,8 @@ public class WeaponSystem : MonoBehaviour
     [Header("Wwise Events")]
     public AK.Wwise.Event genericFireEvent;
 
+    public UnityEvent weaponCollected;
+
     float nextFireTime;
     BulletType currentBulletType = BulletType.Paintball;
     ActiveGrenade activeGrenade;
@@ -46,9 +49,16 @@ public class WeaponSystem : MonoBehaviour
 
     public BulletType CurrentBulletType => currentBulletType;
 
+    public GameObject[] weapons;
+
     void Start()
     {
         playerCollider = GetComponentInParent<CharacterController>();
+
+        if (weaponCollected == null)
+            weaponCollected = new UnityEvent();
+
+        WeaponSwitch(BulletType.Paintball);
     }
 
     void Update()
@@ -59,7 +69,11 @@ public class WeaponSystem : MonoBehaviour
         {
             perkTimer -= Time.deltaTime;
             if (perkTimer <= 0f)
+            {
                 currentBulletType = defaultType;
+                WeaponSwitch(defaultType);
+            }
+                
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -162,5 +176,44 @@ public class WeaponSystem : MonoBehaviour
     {
         currentBulletType = type;
         perkTimer = duration;
+    }
+
+    public void WeaponSwitch(BulletType type)
+    {
+        switch (currentBulletType)
+        {
+            case BulletType.Paintball:
+                {
+                    weapons[0].SetActive(true);
+                    weapons[1].SetActive(false);
+                    weapons[2].SetActive(false);
+                    weapons[3].SetActive(false);
+                    break;
+                }
+            case BulletType.Sniper:
+                {
+                    weapons[0].SetActive(false);
+                    weapons[1].SetActive(true);
+                    weapons[2].SetActive(false);
+                    weapons[3].SetActive(false);
+                    break;
+                }
+            case BulletType.Shotgun:
+                {
+                    weapons[0].SetActive(false);
+                    weapons[1].SetActive(false);
+                    weapons[2].SetActive(true);
+                    weapons[3].SetActive(false);
+                    break;
+                }
+            case BulletType.GrenadeLauncher:
+                {
+                    weapons[0].SetActive(false);
+                    weapons[1].SetActive(false);
+                    weapons[2].SetActive(false);
+                    weapons[3].SetActive(true);
+                    break;
+                }
+        }
     }
 }

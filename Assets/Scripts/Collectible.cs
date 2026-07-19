@@ -31,6 +31,7 @@ public class Collectible : MonoBehaviour
         if (weapon != null)
         {
             weapon.SetBulletType(grantedBulletType, perkDuration);
+            weapon.WeaponSwitch(grantedBulletType);
             Destroy(gameObject);
         }
     }
