@@ -283,7 +283,8 @@ MonoBehaviour:
   shotgunPellets: 8
   shotgunSpreadAngle: 15
   grenadeSpeed: 20
-  fireRate: 0.2
+  currentFireRate: 0.2
+  storedFireRate: 0
   genericFireEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -1612,6 +1613,14 @@ MonoBehaviour:
     maxSpawnInterval: 4
     nextSpawnTime: 0
   - prefab: {fileID: 3640204855685715809, guid: a29b76135e5ef854a937e7ec47479770, type: 3}
+    minSpawnInterval: 1
+    maxSpawnInterval: 4
+    nextSpawnTime: 0
+  - prefab: {fileID: 2618750001663455757, guid: 9cffa2375c4e50e45a8400f8d9fa7cf0, type: 3}
+    minSpawnInterval: 1
+    maxSpawnInterval: 4
+    nextSpawnTime: 0
+  - prefab: {fileID: 553919207547970462, guid: b2babd12dbabb3e46b810a08bc3fc416, type: 3}
     minSpawnInterval: 1
     maxSpawnInterval: 4
     nextSpawnTime: 0

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3640204855685715809}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9432483, y: 2.5699484, z: 2.1626503}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -124,7 +124,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grantedBulletType: 1
-  perkDuration: 10
-  rotateSpeed: 90
-  bobSpeed: 2
-  bobHeight: 0.25
