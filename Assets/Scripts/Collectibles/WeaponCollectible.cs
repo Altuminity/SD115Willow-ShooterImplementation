@@ -1,12 +1,13 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
-public class Collectible : MonoBehaviour
+public class WeaponCollectible : MonoBehaviour, ICollectible
 {
     public BulletType grantedBulletType;
-    public float perkDuration = 10f;
-    public float rotateSpeed = 90f;
-    public float bobSpeed = 2f;
-    public float bobHeight = 0.25f;
+    public float perkDuration => 10f;
+    public float rotateSpeed => 90f;
+    public float bobSpeed => 2f;
+    public float bobHeight => 0.25f;
 
     Vector3 startPos;
 
@@ -23,7 +24,7 @@ public class Collectible : MonoBehaviour
         transform.position = pos;
     }
 
-    void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         WeaponSystem weapon = other.GetComponent<WeaponSystem>();
         if (weapon == null) weapon = other.GetComponentInParent<WeaponSystem>();

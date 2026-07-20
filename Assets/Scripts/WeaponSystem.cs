@@ -31,7 +31,8 @@ public class WeaponSystem : MonoBehaviour
     public float grenadeSpeed = 20f;
 
     [Header("Fire Rate")]
-    public float fireRate = 0.2f;
+    public float currentFireRate = 0.2f;
+    public float storedFireRate;
 
     [Header("Wwise Events")]
     public AK.Wwise.Event genericFireEvent;
@@ -43,6 +44,7 @@ public class WeaponSystem : MonoBehaviour
     ActiveGrenade activeGrenade;
 
     float perkTimer;
+    float ratePerkTimer;
     BulletType defaultType = BulletType.Paintball;
 
     Collider playerCollider;
@@ -76,6 +78,15 @@ public class WeaponSystem : MonoBehaviour
                 
         }
 
+        if (ratePerkTimer > 0f)
+        {
+            ratePerkTimer -= Time.deltaTime;
+            if (ratePerkTimer <= 0f)
+            {
+                currentFireRate = storedFireRate;
+            }
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             if (currentBulletType == BulletType.GrenadeLauncher && activeGrenade != null)
@@ -87,7 +98,7 @@ public class WeaponSystem : MonoBehaviour
 
             if (Time.time >= nextFireTime)
             {
-                nextFireTime = Time.time + fireRate;
+                nextFireTime = Time.time + currentFireRate;
                 Fire();
             }
         }
@@ -112,6 +123,13 @@ public class WeaponSystem : MonoBehaviour
         }
 
         genericFireEvent.Post(gameObject);
+    }
+
+    public void SetFireRate(float newFireRate, float duration)
+    {
+        storedFireRate = currentFireRate;
+        currentFireRate = newFireRate;
+        ratePerkTimer = duration;
     }
 
     void FirePaintball()
