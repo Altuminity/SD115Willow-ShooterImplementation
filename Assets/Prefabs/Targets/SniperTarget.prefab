@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7370457461828725673}
   - component: {fileID: 5438030557022666177}
   - component: {fileID: 2847135667103912425}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SniperTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,5 +119,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.52411747, y: 1.5095257, z: 0.015071182}
+  m_Size: {x: 0.52411747, y: 1.5095257, z: 0.1}
   m_Center: {x: -0.00068956614, y: 0.7547628, z: 0.00095130317}

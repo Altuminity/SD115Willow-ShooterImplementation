@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5254814961775241465}
   - component: {fileID: 3276907458510723056}
   - component: {fileID: 5666908587034207070}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EngineerTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,5 +119,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5714002, y: 1.3575436, z: 0.013243494}
+  m_Size: {x: 0.5714002, y: 1.3575436, z: 0.1}
   m_Center: {x: 0.0056606233, y: 0.6787718, z: 0.00662173}

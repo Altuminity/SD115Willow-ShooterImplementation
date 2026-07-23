@@ -37,8 +37,6 @@ public class WeaponSystem : MonoBehaviour
     [Header("Wwise Events")]
     public AK.Wwise.Event genericFireEvent;
 
-    public UnityEvent weaponCollected;
-
     float nextFireTime;
     BulletType currentBulletType = BulletType.Paintball;
     ActiveGrenade activeGrenade;
@@ -56,9 +54,6 @@ public class WeaponSystem : MonoBehaviour
     void Start()
     {
         playerCollider = GetComponentInParent<CharacterController>();
-
-        if (weaponCollected == null)
-            weaponCollected = new UnityEvent();
 
         WeaponSwitch(BulletType.Paintball);
     }

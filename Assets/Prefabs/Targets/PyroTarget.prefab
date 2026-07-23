@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7475276477941145525}
   - component: {fileID: 5201409610414502529}
   - component: {fileID: 3565242118862455549}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PyroTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,5 +119,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9394693, y: 1.3893467, z: 0.017856207}
+  m_Size: {x: 0.9394693, y: 1.3893467, z: 0.1}
   m_Center: {x: -0.03603664, y: 0.69367176, z: 0.00148365}

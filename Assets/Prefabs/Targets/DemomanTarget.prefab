@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 559409698589413527}
   - component: {fileID: 5302381072539535202}
   - component: {fileID: 6227114248019399540}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DemomanTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,5 +119,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7337768, y: 1.433129, z: 0.014600433}
+  m_Size: {x: 0.7337768, y: 1.433129, z: 0.1}
   m_Center: {x: 0.0014044493, y: 0.7165645, z: 0.00027069962}

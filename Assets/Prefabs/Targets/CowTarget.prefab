@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1258248165499678828}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CowTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 3483246396996090548}
   - component: {fileID: 5548423765406947399}
   - component: {fileID: 8171580714514585511}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CowReposition
   m_TagString: Untagged
   m_Icon: {fileID: 0}

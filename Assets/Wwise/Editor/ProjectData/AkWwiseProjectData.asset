@@ -137,8 +137,8 @@ MonoBehaviour:
         guid: d087e24d43be764dae9750c803870bc2
       Path: Events\TestTone\TestTone
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.1
+      minDuration: 0.1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

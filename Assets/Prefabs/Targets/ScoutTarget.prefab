@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5417854267120210354}
   - component: {fileID: 7524628008848444917}
   - component: {fileID: 1519159977137453071}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ScoutTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,5 +119,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5510928, y: 1.4041692, z: 0.01748178}
+  m_Size: {x: 0.5510928, y: 1.4041692, z: 0.1}
   m_Center: {x: 0.013828844, y: 0.7013667, z: 0.001353693}

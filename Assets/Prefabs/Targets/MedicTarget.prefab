@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2772483328823467537}
   - component: {fileID: 6929480935808612555}
   - component: {fileID: 5806120399631512911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MedicTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,5 +119,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.57187396, y: 1.4066389, z: 0.015217211}
+  m_Size: {x: 0.57187396, y: 1.4066389, z: 0.1}
   m_Center: {x: 0.014821082, y: 0.7113576, z: 0.0009247151}

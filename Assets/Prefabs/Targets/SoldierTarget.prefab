@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1891497864717262966}
   - component: {fileID: 684381326499445283}
   - component: {fileID: 64037958859927491}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SoldierTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,5 +119,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.88912535, y: 1.5426341, z: 0.016450781}
+  m_Size: {x: 0.88912535, y: 1.5426341, z: 0.1}
   m_Center: {x: 0.009368762, y: 0.77023536, z: -0.0012547956}
