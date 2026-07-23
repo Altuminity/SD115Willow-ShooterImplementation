@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7428139900539457334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076148048327656099}
+  - component: {fileID: 1541003023656920432}
+  m_Layer: 0
+  m_Name: TargetSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1076148048327656099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7428139900539457334}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.9432483, y: 2.5699484, z: 2.1626503}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1541003023656920432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7428139900539457334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 714d7d1f53ec4e1489d1431bf001571d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - prefab: {fileID: 7758441165007741966, guid: 95f11fc09d8716d4784d7506319b58a3, type: 3}
+    minSpawnInterval: 5
+    maxSpawnInterval: 15
+    nextSpawnTime: 0
+  - prefab: {fileID: 8993400510609118271, guid: 65606729c41ba994c828831049806f0e, type: 3}
+    minSpawnInterval: 1
+    maxSpawnInterval: 6
+    nextSpawnTime: 0
+  - prefab: {fileID: 3557583880788464139, guid: 201461bc212bcd3408148b352757cbee, type: 3}
+    minSpawnInterval: 3
+    maxSpawnInterval: 6
+    nextSpawnTime: 0
+  - prefab: {fileID: 8116860416927570936, guid: 528e03d760a4e7d489e21d8a2764a5f3, type: 3}
+    minSpawnInterval: 2
+    maxSpawnInterval: 6
+    nextSpawnTime: 0
+  - prefab: {fileID: 826437338528232964, guid: 30ade369c5130a0479626ce9bd03f607, type: 3}
+    minSpawnInterval: 3
+    maxSpawnInterval: 6
+    nextSpawnTime: 0
+  - prefab: {fileID: 7151614527841386441, guid: 39b790f4232a304488b61f43ef93be35, type: 3}
+    minSpawnInterval: 10
+    maxSpawnInterval: 14
+    nextSpawnTime: 0
+  - prefab: {fileID: 963518612332141548, guid: 0c3f88614d7e282458289b9ec48f7251, type: 3}
+    minSpawnInterval: 7
+    maxSpawnInterval: 10
+    nextSpawnTime: 0
+  - prefab: {fileID: 1715476901133307935, guid: d6c3bc86c15bad8428e82b25de9a9385, type: 3}
+    minSpawnInterval: 5
+    maxSpawnInterval: 8
+    nextSpawnTime: 0
+  - prefab: {fileID: 2227971515035375866, guid: b3a0d4b3b73256145a9d6d7663837696, type: 3}
+    minSpawnInterval: 5
+    maxSpawnInterval: 9
+    nextSpawnTime: 0
+  - prefab: {fileID: 7731038472425059035, guid: 008a3a5977e3bba408e179cec8249e17, type: 3}
+    minSpawnInterval: 5
+    maxSpawnInterval: 9
+    nextSpawnTime: 0
+  spawnBounds: {fileID: 0}
+  spawnHeight: 1.5

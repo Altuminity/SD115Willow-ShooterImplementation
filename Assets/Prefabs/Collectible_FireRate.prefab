@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2775888078836954078}
   - component: {fileID: 7193032984286110676}
-  - component: {fileID: 538923951853005000}
+  - component: {fileID: 8528859607758927620}
   m_Layer: 0
   m_Name: Collectible_FireRate
   m_TagString: Untagged
@@ -49,8 +49,8 @@ MonoBehaviour:
   powerType: 1
   healingAmount: 100
   fireRateUpAmount: 0.01
---- !u!136 &538923951853005000
-CapsuleCollider:
+--- !u!135 &8528859607758927620
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -67,11 +67,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.45, z: 0}
 --- !u!1 &7082388283804002560
 GameObject:
   m_ObjectHideFlags: 0
