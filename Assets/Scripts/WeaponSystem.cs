@@ -196,7 +196,7 @@ public class WeaponSystem : MonoBehaviour
         perkTimer = duration;
     }
 
-    public void WeaponSwitch(BulletType type)
+    public void WeaponSwitch(BulletType type) // probably better with a for or for each loop in a seperate function
     {
         switch (currentBulletType)
         {
@@ -206,6 +206,7 @@ public class WeaponSystem : MonoBehaviour
                     weapons[1].SetActive(false);
                     weapons[2].SetActive(false);
                     weapons[3].SetActive(false);
+                    //SwitchWeapons(0)
                     break;
                 }
             case BulletType.Sniper:
@@ -214,6 +215,7 @@ public class WeaponSystem : MonoBehaviour
                     weapons[1].SetActive(true);
                     weapons[2].SetActive(false);
                     weapons[3].SetActive(false);
+                    //SwitchWeapons(1)
                     break;
                 }
             case BulletType.Shotgun:
@@ -222,6 +224,7 @@ public class WeaponSystem : MonoBehaviour
                     weapons[1].SetActive(false);
                     weapons[2].SetActive(true);
                     weapons[3].SetActive(false);
+                    //SwitchWeapons(2)
                     break;
                 }
             case BulletType.GrenadeLauncher:
@@ -230,8 +233,14 @@ public class WeaponSystem : MonoBehaviour
                     weapons[1].SetActive(false);
                     weapons[2].SetActive(false);
                     weapons[3].SetActive(true);
+                    //SwitchWeapons(3)
                     break;
                 }
         }
+    }
+
+    private void SwitchWeapons(int weaponsIndex)
+    {
+        throw new System.NotImplementedException();
     }
 }
