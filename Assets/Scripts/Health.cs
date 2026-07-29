@@ -18,7 +18,7 @@ public class Health : MonoBehaviour
     // properties / getters, write them with a capital, these are used outside of this script
     public int MaxHealth => _maxHealth;
 
-    public int CurrentHealth {get; private set;}
+    public int CurrentHealth { get; private set; }
 
     public bool IsDead => CurrentHealth <= 0;
 
@@ -55,11 +55,16 @@ public class Health : MonoBehaviour
         CurrentHealth = MaxHealth;
     }
 
+    public void Die()
+    {
+        Destroy(gameObject);
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        CurrentHealth = MaxHealth;
     }
 
     // Update is called once per frame

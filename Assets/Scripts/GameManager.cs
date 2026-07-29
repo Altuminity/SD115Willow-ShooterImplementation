@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         OnScoreChanged?.Invoke(Score);
     }
 
-    void EndGame()
+    public void EndGame()
     {
         IsGameActive = false;
         Cursor.lockState = CursorLockMode.None;
