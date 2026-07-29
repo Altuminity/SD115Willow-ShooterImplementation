@@ -37,7 +37,7 @@ public class WeaponSystem : MonoBehaviour
     [Header("Wwise Events")]
     public AK.Wwise.Event genericFireEvent;
 
-    float nextFireTime;
+    private float nextFireTime;
     BulletType currentBulletType = BulletType.Paintball;
     ActiveGrenade activeGrenade;
 
@@ -68,6 +68,8 @@ public class WeaponSystem : MonoBehaviour
             if (perkTimer <= 0f)
             {
                 currentBulletType = defaultType;
+                
+                if (this.CompareTag("Player"))
                 WeaponSwitch(defaultType);
             }
                 
@@ -82,7 +84,7 @@ public class WeaponSystem : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && gameObject.CompareTag("Player"))
         {
             if (currentBulletType == BulletType.GrenadeLauncher && activeGrenade != null)
             {
@@ -99,7 +101,7 @@ public class WeaponSystem : MonoBehaviour
         }
     }
 
-    void Fire()
+    public void Fire()
     {
         switch (currentBulletType)
         {
