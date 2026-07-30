@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paintballPrefab: {fileID: 1955116497652083709, guid: efd8b20fa61ed8142ada6e6cdc5817a5, type: 3}
+  explosionSoundPrefab: {fileID: 2946940913363166030, guid: d6464124e26e6a242948a04de1adb485, type: 3}
   fragmentCount: 12
   fragmentSpeed: 15
   autoExplodeTime: 1

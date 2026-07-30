@@ -36,6 +36,11 @@ public class WeaponSystem : MonoBehaviour
 
     [Header("Wwise Events")]
     public AK.Wwise.Event genericFireEvent;
+    public AK.Wwise.Event setPaintball;
+    public AK.Wwise.Event setSniper;
+    public AK.Wwise.Event setShotgun;
+    public AK.Wwise.Event setGrenade;
+    public GameObject sniperHitObject;
 
     private float nextFireTime;
     BulletType currentBulletType = BulletType.Paintball;
@@ -144,6 +149,8 @@ public class WeaponSystem : MonoBehaviour
             Target target = hit.collider.GetComponent<Target>();
             if (target != null)
                 target.DestroyTarget();
+
+            Instantiate(sniperHitObject, hit.transform.position, Quaternion.identity);
         }
     }
 
@@ -203,6 +210,7 @@ public class WeaponSystem : MonoBehaviour
                     weapons[1].SetActive(false);
                     weapons[2].SetActive(false);
                     weapons[3].SetActive(false);
+                    setPaintball.Post(gameObject);
                     //SwitchWeapons(0)
                     break;
                 }
@@ -212,6 +220,7 @@ public class WeaponSystem : MonoBehaviour
                     weapons[1].SetActive(true);
                     weapons[2].SetActive(false);
                     weapons[3].SetActive(false);
+                    setSniper.Post(gameObject);
                     //SwitchWeapons(1)
                     break;
                 }
@@ -221,6 +230,7 @@ public class WeaponSystem : MonoBehaviour
                     weapons[1].SetActive(false);
                     weapons[2].SetActive(true);
                     weapons[3].SetActive(false);
+                    setShotgun.Post(gameObject);
                     //SwitchWeapons(2)
                     break;
                 }
@@ -230,6 +240,7 @@ public class WeaponSystem : MonoBehaviour
                     weapons[1].SetActive(false);
                     weapons[2].SetActive(false);
                     weapons[3].SetActive(true);
+                    setGrenade.Post(gameObject);
                     //SwitchWeapons(3)
                     break;
                 }

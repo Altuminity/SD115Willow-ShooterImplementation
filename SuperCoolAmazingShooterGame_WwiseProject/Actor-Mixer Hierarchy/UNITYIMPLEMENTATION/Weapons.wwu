@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Weapons" ID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="AM_Weapons" ID="{FCE2BFC5-0A4F-4492-9A8C-FA1E044066BD}" ShortID="547409916">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="SW_Fire" ID="{12F1DEE8-4674-4A0B-B384-956E115FD4F4}" ShortID="105023955">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Paintball" ID="{8DC9E72A-901E-4613-918A-CF152574CC08}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="weaponFireSwitch" ID="{E27CF2DF-B82A-4B15-9360-DDCA0B2C7710}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="paintballShot" ID="{8963197D-56B5-4949-AE20-47B3EA6144C5}" ShortID="263863514">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="sniperShot" ID="{ED0C2B00-FC5D-445A-8606-57DAE15C5A9B}" ShortID="921548117">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="shotgunShot" ID="{FC5BD833-B14A-440C-8F9A-A7F7A4BA13F3}" ShortID="846907623">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="grenadeShot" ID="{F9A4A813-C5B1-43A5-B57E-2B51105745D3}" ShortID="348374583">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="sniperShot" ID="{ED0C2B00-FC5D-445A-8606-57DAE15C5A9B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="grenadeShot" ID="{F9A4A813-C5B1-43A5-B57E-2B51105745D3}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="shotgunShot" ID="{FC5BD833-B14A-440C-8F9A-A7F7A4BA13F3}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="paintballShot" ID="{8963197D-56B5-4949-AE20-47B3EA6144C5}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Sniper" ID="{E1460A03-C53D-4473-B142-F9E7178A02A1}"/>
+										<ItemList>
+											<ItemRef Name="sniperShot" ID="{ED0C2B00-FC5D-445A-8606-57DAE15C5A9B}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Paintball" ID="{8DC9E72A-901E-4613-918A-CF152574CC08}"/>
+										<ItemList>
+											<ItemRef Name="paintballShot" ID="{8963197D-56B5-4949-AE20-47B3EA6144C5}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Shotgun" ID="{C3AFA552-4DA9-488F-9E57-6610C7852E99}"/>
+										<ItemList>
+											<ItemRef Name="shotgunShot" ID="{FC5BD833-B14A-440C-8F9A-A7F7A4BA13F3}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grenade" ID="{BFE6A38E-07A9-466C-8F51-4774C819E152}"/>
+										<ItemList>
+											<ItemRef Name="grenadeShot" ID="{F9A4A813-C5B1-43A5-B57E-2B51105745D3}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="grenadeExplosion" ID="{9971C77F-82B2-4AC5-9CEF-C814810B51E3}" ShortID="994504290">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+								</Reference>
+							</ReferenceList>
+						</Sound>
+						<Sound Name="sniperHit" ID="{116FE0B7-737B-45C2-BB46-8ADFD5DA7030}" ShortID="576616974">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+								</Reference>
+							</ReferenceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

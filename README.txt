@@ -1,3 +1,7 @@
+26/07/29 PM
+-added placeholder stuff in wwise project (empty sounds and hierarchies and set up some game syncs)
+-added AKwiseEvents in new generic SoundAndDestory.cs, as well as active grenade, paintball, and weapon system.
+
 26/07/29
 -imported a modeled and rigged sentry turret (created by yours truly ;3) inspired by the tf2 level 1 turret
 -Implemented a tracking system that detects when a player walks within range of it and when it sets it's crosshairs on the player begins to fire basic paintballs (might make it so that the rotation speed is faster than the player making it harder to avoid and force you to kill it)

@@ -109,6 +109,19 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584170929278850371
     List: []
+  - PhysicalPath: Events\Interactables.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Interactables
+      ObjectType: 12
+      guid: 5679eb5759c68d479531e15e18577c11
+    ParentPath: Events\Interactables
+    guid: 5679eb5759c68d479531e15e18577c11
+    GuidInternal: 
+    m_lastTime: -8584162168205259810
+    List: []
   - PhysicalPath: Events\TestTone.wwu
     PathAndIcons:
     - ElementName: Events
@@ -139,6 +152,19 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.1
       minDuration: 0.1
+  - PhysicalPath: Events\Weapons.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Weapons
+      ObjectType: 12
+      guid: 18139fcd9b575444bd39280c8b31656b
+    ParentPath: Events\Weapons
+    guid: 18139fcd9b575444bd39280c8b31656b
+    GuidInternal: 
+    m_lastTime: -8584162168656953546
+    List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -152,6 +178,19 @@ MonoBehaviour:
     guid: f6033285ee13fe468a4eb1e0218925d2
     GuidInternal: 
     m_lastTime: -8584170929278850371
+    List: []
+  - PhysicalPath: Game Parameters\RTPC.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: RTPC
+      ObjectType: 12
+      guid: 824a4d643afd9f44bf46eb68274a2344
+    ParentPath: Game Parameters\RTPC
+    guid: 824a4d643afd9f44bf46eb68274a2344
+    GuidInternal: 
+    m_lastTime: -8584162157829769651
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -167,6 +206,85 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584170929278690378
     List: []
+  - PhysicalPath: States\MenuGameplay.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: MenuGameplay
+      ObjectType: 12
+      guid: 8ff6034628c725498a4f1d112b058e1c
+    ParentPath: States\MenuGameplay
+    guid: 8ff6034628c725498a4f1d112b058e1c
+    GuidInternal: 
+    m_lastTime: -8584162160909710350
+    List:
+    - name: STA_MenuGameplay
+      guid: c90d3ddc566e1348861312cf597553d5
+      id: 1862888325
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MenuGameplay
+        ObjectType: 12
+        guid: 8ff6034628c725498a4f1d112b058e1c
+      - ElementName: STA_MenuGameplay
+        ObjectType: 9
+        guid: c90d3ddc566e1348861312cf597553d5
+      Path: States\MenuGameplay\STA_MenuGameplay
+      values:
+      - name: Gameplay
+        guid: 293343292c7c6941ab50b5d5294b451d
+        id: 89505537
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MenuGameplay
+          ObjectType: 12
+          guid: 8ff6034628c725498a4f1d112b058e1c
+        - ElementName: STA_MenuGameplay
+          ObjectType: 9
+          guid: c90d3ddc566e1348861312cf597553d5
+        - ElementName: Gameplay
+          ObjectType: 8
+          guid: 293343292c7c6941ab50b5d5294b451d
+      - name: Menu
+        guid: 39548f0856d5f640a11329b0b4a594f1
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MenuGameplay
+          ObjectType: 12
+          guid: 8ff6034628c725498a4f1d112b058e1c
+        - ElementName: STA_MenuGameplay
+          ObjectType: 9
+          guid: c90d3ddc566e1348861312cf597553d5
+        - ElementName: Menu
+          ObjectType: 8
+          guid: 39548f0856d5f640a11329b0b4a594f1
+      - name: None
+        guid: 594139d2fcfa7147932a3f956b1f654b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MenuGameplay
+          ObjectType: 12
+          guid: 8ff6034628c725498a4f1d112b058e1c
+        - ElementName: STA_MenuGameplay
+          ObjectType: 9
+          guid: c90d3ddc566e1348861312cf597553d5
+        - ElementName: None
+          ObjectType: 8
+          guid: 594139d2fcfa7147932a3f956b1f654b
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -181,6 +299,101 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584170929278670382
     List: []
+  - PhysicalPath: Switches\Weapons.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Weapons
+      ObjectType: 12
+      guid: 40d822a805e8264b9aa086f37f70c67d
+    ParentPath: Switches\Weapons
+    guid: 40d822a805e8264b9aa086f37f70c67d
+    GuidInternal: 
+    m_lastTime: -8584162164276762515
+    List:
+    - name: weaponFireSwitch
+      guid: dff27ce22ab8154b9360ddca0b2c7710
+      id: 2593986681
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: 40d822a805e8264b9aa086f37f70c67d
+      - ElementName: weaponFireSwitch
+        ObjectType: 11
+        guid: dff27ce22ab8154b9360ddca0b2c7710
+      Path: Switches\Weapons\weaponFireSwitch
+      values:
+      - name: Grenade
+        guid: 8ea3e6bfa9076c468f514774c819e152
+        id: 3255686181
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Weapons
+          ObjectType: 12
+          guid: 40d822a805e8264b9aa086f37f70c67d
+        - ElementName: weaponFireSwitch
+          ObjectType: 11
+          guid: dff27ce22ab8154b9360ddca0b2c7710
+        - ElementName: Grenade
+          ObjectType: 10
+          guid: 8ea3e6bfa9076c468f514774c819e152
+      - name: Paintball
+        guid: 2ae7c98d1e901346918acf152574cc08
+        id: 70791844
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Weapons
+          ObjectType: 12
+          guid: 40d822a805e8264b9aa086f37f70c67d
+        - ElementName: weaponFireSwitch
+          ObjectType: 11
+          guid: dff27ce22ab8154b9360ddca0b2c7710
+        - ElementName: Paintball
+          ObjectType: 10
+          guid: 2ae7c98d1e901346918acf152574cc08
+      - name: Shotgun
+        guid: 52a5afc3a94d8f489e576610c7852e99
+        id: 51683977
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Weapons
+          ObjectType: 12
+          guid: 40d822a805e8264b9aa086f37f70c67d
+        - ElementName: weaponFireSwitch
+          ObjectType: 11
+          guid: dff27ce22ab8154b9360ddca0b2c7710
+        - ElementName: Shotgun
+          ObjectType: 10
+          guid: 52a5afc3a94d8f489e576610c7852e99
+      - name: Sniper
+        guid: 030a46e13dc57344b142f9e7178a02a1
+        id: 2550763292
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Weapons
+          ObjectType: 12
+          guid: 40d822a805e8264b9aa086f37f70c67d
+        - ElementName: weaponFireSwitch
+          ObjectType: 11
+          guid: dff27ce22ab8154b9360ddca0b2c7710
+        - ElementName: Sniper
+          ObjectType: 10
+          guid: 030a46e13dc57344b142f9e7178a02a1
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:

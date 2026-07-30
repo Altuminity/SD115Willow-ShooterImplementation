@@ -7,6 +7,8 @@ public class Paintball : MonoBehaviour
 
     private Vector3 previousPosition;
 
+    public GameObject paintballHitSound;
+
     void Start()
     {
         previousPosition = transform.position;
@@ -22,6 +24,7 @@ public class Paintball : MonoBehaviour
         if (health != null)
             health.TakeDamage(damage);
 
+        Instantiate(paintballHitSound, transform.position, Quaternion.identity);
 
         Destroy(gameObject);
     }
@@ -43,7 +46,9 @@ public class Paintball : MonoBehaviour
                     Health health = hit.collider.GetComponent<Health>();
                     if(health != null)
                         health.TakeDamage(damage);
-                    
+
+                    Instantiate(paintballHitSound, transform.position, Quaternion.identity);
+
                     Destroy(gameObject);
                 }
             }

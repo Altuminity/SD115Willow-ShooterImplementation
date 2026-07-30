@@ -4,6 +4,7 @@ public class ActiveGrenade : MonoBehaviour
 {
     [Header("Explosion Settings")]
     public GameObject paintballPrefab;
+    public GameObject explosionSoundPrefab;
     public int fragmentCount = 12;
     public float fragmentSpeed = 15f;
     public float autoExplodeTime = 5f;
@@ -30,6 +31,8 @@ public class ActiveGrenade : MonoBehaviour
 
         if (weaponSystem != null)
             weaponSystem.ClearActiveGrenade();
+
+        Instantiate(explosionSoundPrefab, transform.position, Quaternion.identity);
 
         Destroy(gameObject);
     }
