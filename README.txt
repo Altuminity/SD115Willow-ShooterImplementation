@@ -1,3 +1,6 @@
+26/08/03
+-added new spawner script for overall generic use. It will detect if an object of a certain layer is currently hitting a raycast and when there is NO object it will spawn a new one, currently implemented in the level as 4 sentry spawners surrounding the player.
+
 26/07/29 PM
 -added placeholder stuff in wwise project (empty sounds and hierarchies and set up some game syncs)
 -added AKwiseEvents in new generic SoundAndDestory.cs, as well as active grenade, paintball, and weapon system.

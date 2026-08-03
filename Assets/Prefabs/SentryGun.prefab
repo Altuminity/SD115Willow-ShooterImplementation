@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1489881362430010628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1851332317635113085}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0.178}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41,8 +41,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8128928786326359541}
   - component: {fileID: 6720434448470693287}
+  - component: {fileID: 2473056553375484707}
   - component: {fileID: 2045165729605652102}
-  m_Layer: 0
+  - component: {fileID: 2431436267566036812}
+  - component: {fileID: 1798389162593348176}
+  m_Layer: 8
   m_Name: SentryGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,8 +81,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   headRot: {fileID: 1402795843186938867}
+  weapon: {fileID: 2473056553375484707}
+  rotationSpeed: 5
+  rotationOffsetEuler: {x: 0, y: 0, z: -90}
+  aimThresholdAngle: 5
+--- !u!114 &2473056553375484707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7926013325452819026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05b9aab9bc10c64398c7cc4be82b754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1489881362430010628}
+  paintballPrefab: {fileID: 1955116497652083709, guid: efd8b20fa61ed8142ada6e6cdc5817a5, type: 3}
+  grenadePrefab: {fileID: 0}
+  paintballSpeed: 20
+  sniperRange: 200
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  shotgunPellets: 8
+  shotgunSpreadAngle: 15
+  grenadeSpeed: 20
+  currentFireRate: 0.2
+  storedFireRate: 0
+  genericFireEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  setPaintball:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  setSniper:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  setShotgun:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  setGrenade:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  sniperHitObject: {fileID: 0}
+  weapons: []
 --- !u!135 &2045165729605652102
 SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7926013325452819026}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 5
+  m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &2431436267566036812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7926013325452819026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671c8dc5cd3754642927cc64d4e47640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  OnDamaged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDied:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2431436267566036812}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &1798389162593348176
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97,8 +203,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 5
-  m_Center: {x: 0, y: 1.25, z: 0}
+  m_Size: {x: 0.6360739, y: 0.84116924, z: 0.67522156}
+  m_Center: {x: 0, y: 0.9205846, z: 0.03230314}
 --- !u!1001 &7512311789934213561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -147,14 +253,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8651132940173892543, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2198888584636164399, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -543466755477720952, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -344898490527339958, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
       propertyPath: m_Name
       value: SentryFULL
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2063708790634249020, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2747843556976221969, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: bccbcb7b6a4d6414a91148998ee82619, type: 2}
+    - target: {fileID: 5332809968238436118, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6872648824850998674, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 9146520335204956961, guid: 5e756cb9f3b0ee049b3b2f15e79d7ff7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
