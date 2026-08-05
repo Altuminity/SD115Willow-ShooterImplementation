@@ -5,6 +5,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    [Header("Wwise States")]
+    public AK.Wwise.Event setGameState;
+    public AK.Wwise.Event setMenuState;
+
     [Header("Game Settings")]
     public float gameDuration = 60f;
 
@@ -47,6 +51,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        setGameState.Post(gameObject);
         Score = 0;
         TimeRemaining = gameDuration;
         IsGameActive = true;
@@ -64,6 +69,7 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
+        setMenuState.Post(gameObject);
         IsGameActive = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -72,6 +78,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        setGameState.Post(gameObject);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

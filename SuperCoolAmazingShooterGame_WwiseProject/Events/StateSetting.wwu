@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9E9D96E6-0A51-416F-BBA3-7233D6044040}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="StateSetting" ID="{9E9D96E6-0A51-416F-BBA3-7233D6044040}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="MenuGameplay" ID="{BD115E59-43A1-4466-A7C7-04340DF3B80B}" ShortID="350937272">
+					<ChildrenList>
+						<Event Name="SetGameState" ID="{07294E59-C974-47BC-80C5-8D973C29730C}">
+							<ChildrenList>
+								<Action Name="" ID="{5A7AA233-F0EF-4AC4-837A-A707C15CEE91}" ShortID="87302617">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gameplay" ID="{29433329-7C2C-4169-AB50-B5D5294B451D}" WorkUnitID="{4603F68F-C728-4925-8A4F-1D112B058E1C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SetMenuState" ID="{7FB7C9D1-561E-4064-BBCB-E1CB54821B93}">
+							<ChildrenList>
+								<Action Name="" ID="{0D4C83FF-6088-4F17-88BE-C20E20798B13}" ShortID="718571085">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu" ID="{088F5439-D556-40F6-A113-29B0B4A594F1}" WorkUnitID="{4603F68F-C728-4925-8A4F-1D112B058E1C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -826,6 +826,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d50be98bd239446821337feb6f07ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  setGameState:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d6a80d4731bad5d49a40af0e3e777ca6, type: 2}
+  setMenuState:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5b250ba0b826b1643a9c2b0a6439e63f, type: 2}
   gameDuration: 60
 --- !u!4 &365160621
 Transform:
@@ -2376,11 +2384,20 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d0a68678a70d59445b23b8c5c9a00438, type: 2}
-  charCon: {fileID: 142604433}
   playerSpeed:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a8614beb9777d344b8185d801608966f, type: 2}
+  setMenuState:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5b250ba0b826b1643a9c2b0a6439e63f, type: 2}
+  setGameState:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d6a80d4731bad5d49a40af0e3e777ca6, type: 2}
+  menuUI: {fileID: 1607786471}
+  charCon: {fileID: 142604433}
 --- !u!4 &1576771989
 Transform:
   m_ObjectHideFlags: 0

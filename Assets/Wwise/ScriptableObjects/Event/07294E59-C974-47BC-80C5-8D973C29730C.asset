@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4afe8606afc774baa4b661c88fb8b7, type: 3}
+  m_Name: 07294E59-C974-47BC-80C5-8D973C29730C
+  m_EditorClassIdentifier: 
+  objectName: SetGameState
+  id: 775900504
+  guid: 07294E59-C974-47BC-80C5-8D973C29730C
+  IsInUserDefinedSoundBank: 1

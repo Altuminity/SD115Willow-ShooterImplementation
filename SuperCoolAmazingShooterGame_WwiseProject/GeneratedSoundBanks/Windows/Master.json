@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
     "Language": "SFX",
-    "Hash": "{14A0C7BB-1232-221F-EC42-1CC88AA94843}",
+    "Hash": "{D2D50CE4-3FFE-3911-C177-F943DD495619}",
     "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
     "Media": [
+     {
+      "Id": "163910720",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TrumpetEnd.wav",
+      "CachePath": "B0/{B04495C5-3F03-BDFD-5868-F9363C899B96}.wem"
+     },
      {
       "Id": "249174207",
       "Language": "SFX",
@@ -24,12 +32,28 @@
       "CachePath": "35/{3528D1B0-46FA-C530-7D30-FFF3B9E867A7}.wem"
      },
      {
+      "Id": "292184215",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DrumsEnd.wav",
+      "CachePath": "FC/{FC8EEF24-C362-27B0-B939-262A2FF186AC}.wem"
+     },
+     {
       "Id": "505764327",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "TrumpetLoop.wav",
       "CachePath": "19/{1981D4A5-1CBD-AC50-C58F-72FBD07C5CB5}.wem"
+     },
+     {
+      "Id": "877792112",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BassEnd.wav",
+      "CachePath": "2C/{2C3A542D-47E2-9410-6870-539D7C10F386}.wem"
      },
      {
       "Id": "1012187701",
@@ -59,15 +83,101 @@
       "ObjectPath": "\\Events\\Music\\Play_Music_Playlist",
       "GUID": "{59D085A9-141B-41A0-ADED-861FBFF60C16}",
       "DurationType": "Infinite",
-      "MediaRefs": [
+      "SwitchContainers": [
        {
-        "Id": "249174207"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1862888325",
+         "Id": "0",
+         "GUID": "{DC3D0DC9-6E56-4813-8613-12CF597553D5}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "249174207"
+         },
+         {
+          "Id": "505764327"
+         },
+         {
+          "Id": "1012187701"
+         }
+        ]
        },
        {
-        "Id": "505764327"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1862888325",
+         "Id": "89505537",
+         "GUID": "{29433329-7C2C-4169-AB50-B5D5294B451D}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "249174207"
+         },
+         {
+          "Id": "505764327"
+         },
+         {
+          "Id": "1012187701"
+         }
+        ]
        },
        {
-        "Id": "1012187701"
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1862888325",
+         "Id": "2607556080",
+         "GUID": "{088F5439-D556-40F6-A113-29B0B4A594F1}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "163910720"
+         },
+         {
+          "Id": "292184215"
+         },
+         {
+          "Id": "877792112"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "775900504",
+      "Name": "SetGameState",
+      "ObjectPath": "\\Events\\StateSetting\\MenuGameplay\\SetGameState",
+      "GUID": "{07294E59-C974-47BC-80C5-8D973C29730C}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "1862888325",
+        "Id": "89505537",
+        "Name": "Gameplay",
+        "ObjectPath": "\\States\\MenuGameplay\\STA_MenuGameplay\\Gameplay",
+        "GUID": "{29433329-7C2C-4169-AB50-B5D5294B451D}"
+       }
+      ]
+     },
+     {
+      "Id": "687305845",
+      "Name": "SetMenuState",
+      "ObjectPath": "\\Events\\StateSetting\\MenuGameplay\\SetMenuState",
+      "GUID": "{7FB7C9D1-561E-4064-BBCB-E1CB54821B93}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "1862888325",
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\MenuGameplay\\STA_MenuGameplay\\Menu",
+        "GUID": "{088F5439-D556-40F6-A113-29B0B4A594F1}"
        }
       ]
      },
@@ -95,9 +205,37 @@
       "ObjectPath": "\\Game Parameters\\RTPC\\RTPC_PlayerSpeed",
       "GUID": "{E196F123-54B9-42A3-918D-8689297EFA1E}"
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1862888325",
+      "Name": "STA_MenuGameplay",
+      "ObjectPath": "\\States\\MenuGameplay\\STA_MenuGameplay",
+      "GUID": "{DC3D0DC9-6E56-4813-8613-12CF597553D5}",
+      "States": [
+       {
+        "Id": "89505537",
+        "Name": "Gameplay",
+        "ObjectPath": "\\States\\MenuGameplay\\STA_MenuGameplay\\Gameplay",
+        "GUID": "{29433329-7C2C-4169-AB50-B5D5294B451D}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\MenuGameplay\\STA_MenuGameplay\\None",
+        "GUID": "{D2394159-FAFC-4771-932A-3F956B1F654B}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\MenuGameplay\\STA_MenuGameplay\\Menu",
+        "GUID": "{088F5439-D556-40F6-A113-29B0B4A594F1}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{A030D5F8-0DE4-12F7-8C4C-0918CAFC6610}"
+  "FileHash": "{9E7E05EE-FB4B-0D1B-9B61-179D68942972}"
  }
 }

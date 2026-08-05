@@ -133,7 +133,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 93e27300337a0f4eb61f8a4f59872e5d
     GuidInternal: 
-    m_lastTime: -8584157261570013554
+    m_lastTime: -8584157026520409886
     List:
     - name: Play_Music_Playlist
       guid: a985d0591b14a041aded861fbff60c16
@@ -149,6 +149,76 @@ MonoBehaviour:
         ObjectType: 3
         guid: a985d0591b14a041aded861fbff60c16
       Path: Events\Music\Play_Music_Playlist
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - PhysicalPath: Events\StateSetting.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: StateSetting
+      ObjectType: 12
+      guid: e6969d9e510a6f41bba37233d6044040
+    ParentPath: Events\StateSetting
+    guid: e6969d9e510a6f41bba37233d6044040
+    GuidInternal: 
+    m_lastTime: -8584157019998138414
+    List:
+    - name: MenuGameplay
+      guid: 595e11bda1436644a7c704340df3b80b
+      id: 208142260
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: StateSetting
+        ObjectType: 12
+        guid: e6969d9e510a6f41bba37233d6044040
+      - ElementName: MenuGameplay
+        ObjectType: 4
+        guid: 595e11bda1436644a7c704340df3b80b
+      Path: Events\StateSetting\MenuGameplay
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetGameState
+      guid: 594e290774c9bc4780c58d973c29730c
+      id: 775900504
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: StateSetting
+        ObjectType: 12
+        guid: e6969d9e510a6f41bba37233d6044040
+      - ElementName: MenuGameplay
+        ObjectType: 4
+        guid: 595e11bda1436644a7c704340df3b80b
+      - ElementName: SetGameState
+        ObjectType: 3
+        guid: 594e290774c9bc4780c58d973c29730c
+      Path: Events\StateSetting\MenuGameplay\SetGameState
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SetMenuState
+      guid: d1c9b77f1e566440bbcbe1cb54821b93
+      id: 687305845
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: StateSetting
+        ObjectType: 12
+        guid: e6969d9e510a6f41bba37233d6044040
+      - ElementName: MenuGameplay
+        ObjectType: 4
+        guid: 595e11bda1436644a7c704340df3b80b
+      - ElementName: SetMenuState
+        ObjectType: 3
+        guid: d1c9b77f1e566440bbcbe1cb54821b93
+      Path: Events\StateSetting\MenuGameplay\SetMenuState
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -220,7 +290,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\RTPC
     guid: 824a4d643afd9f44bf46eb68274a2344
     GuidInternal: 
-    m_lastTime: -8584157097123128512
+    m_lastTime: -8584157044585964660
     List:
     - name: RTPC_PlayerSpeed
       guid: 23f196e1b954a342918d8689297efa1e
@@ -453,7 +523,7 @@ MonoBehaviour:
     m_lastTime: -8584162672433819941
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000080000000a0000000c0000000e0000001d0000001f000000
+  ExpandedWaapiItemIds: 0500000006000000080000000a0000000c0000000e00000010000000110000001d0000001f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

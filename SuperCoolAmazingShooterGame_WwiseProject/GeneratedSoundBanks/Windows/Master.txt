@@ -1,6 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
+	687305845	SetMenuState			\StateSetting\MenuGameplay\SetMenuState	
+	775900504	SetGameState			\StateSetting\MenuGameplay\SetGameState	
 	4264879856	Play_Music_Playlist			\Music\Play_Music_Playlist	
 	4283052285	TestTone			\TestTone\TestTone	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1862888325	STA_MenuGameplay			\MenuGameplay\STA_MenuGameplay	
+
+State	ID	Name	State Group			Notes
+	89505537	Gameplay	STA_MenuGameplay			
+	748895195	None	STA_MenuGameplay			
+	2607556080	Menu	STA_MenuGameplay			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2653406601	RTPC_PlayerSpeed			\RTPC\RTPC_PlayerSpeed	
@@ -9,7 +19,10 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	305077029	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\TestTone\TestTone\Tone Generator	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	249174207	Bass	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\35\{3528D1B0-46FA-C530-7D30-FFF3B9E867A7}.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Playlist\TF2Inspired_Loop\Bass		5266428
-	505764327	Trumpet	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\19\{1981D4A5-1CBD-AC50-C58F-72FBD07C5CB5}.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Playlist\TF2Inspired_Loop\Trumpet		5266428
-	1012187701	Drums	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\2B\{2BEB404C-F980-9F1A-AE8F-3349A65ABA2B}.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Playlist\TF2Inspired_Loop\Drums		5266428
+	163910720	Trumpet	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\B0\{B04495C5-3F03-BDFD-5868-F9363C899B96}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\TF2Inspired_End\TF2Inspired_End\Trumpet		1316716
+	249174207	Bass	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\35\{3528D1B0-46FA-C530-7D30-FFF3B9E867A7}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\TF2Inspired_Loop\TF2Inspired_Loop\Bass		5266428
+	292184215	Drums	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\FC\{FC8EEF24-C362-27B0-B939-262A2FF186AC}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\TF2Inspired_End\TF2Inspired_End\Drums		1316716
+	505764327	Trumpet	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\19\{1981D4A5-1CBD-AC50-C58F-72FBD07C5CB5}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\TF2Inspired_Loop\TF2Inspired_Loop\Trumpet		5266428
+	877792112	Bass	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\2C\{2C3A542D-47E2-9410-6870-539D7C10F386}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\TF2Inspired_End\TF2Inspired_End\Bass		1316716
+	1012187701	Drums	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\2B\{2BEB404C-F980-9F1A-AE8F-3349A65ABA2B}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\TF2Inspired_Loop\TF2Inspired_Loop\Drums		5266428
 
