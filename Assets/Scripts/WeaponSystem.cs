@@ -202,48 +202,51 @@ public class WeaponSystem : MonoBehaviour
 
     public void WeaponSwitch(BulletType type) // probably better with a for or for each loop in a seperate function
     {
-        switch (currentBulletType)
+        if(gameObject.CompareTag("Player"))
         {
-            case BulletType.Paintball:
-                {
-                    weapons[0].SetActive(true);
-                    weapons[1].SetActive(false);
-                    weapons[2].SetActive(false);
-                    weapons[3].SetActive(false);
-                    setPaintball.Post(gameObject);
-                    //SwitchWeapons(0)
-                    break;
-                }
-            case BulletType.Sniper:
-                {
-                    weapons[0].SetActive(false);
-                    weapons[1].SetActive(true);
-                    weapons[2].SetActive(false);
-                    weapons[3].SetActive(false);
-                    setSniper.Post(gameObject);
-                    //SwitchWeapons(1)
-                    break;
-                }
-            case BulletType.Shotgun:
-                {
-                    weapons[0].SetActive(false);
-                    weapons[1].SetActive(false);
-                    weapons[2].SetActive(true);
-                    weapons[3].SetActive(false);
-                    setShotgun.Post(gameObject);
-                    //SwitchWeapons(2)
-                    break;
-                }
-            case BulletType.GrenadeLauncher:
-                {
-                    weapons[0].SetActive(false);
-                    weapons[1].SetActive(false);
-                    weapons[2].SetActive(false);
-                    weapons[3].SetActive(true);
-                    setGrenade.Post(gameObject);
-                    //SwitchWeapons(3)
-                    break;
-                }
+            switch (currentBulletType)
+            {
+                case BulletType.Paintball:
+                    {
+                        weapons[0].SetActive(true);
+                        weapons[1].SetActive(false);
+                        weapons[2].SetActive(false);
+                        weapons[3].SetActive(false);
+                        setPaintball.Post(gameObject);
+                        //SwitchWeapons(0)
+                        break;
+                    }
+                case BulletType.Sniper:
+                    {
+                        weapons[0].SetActive(false);
+                        weapons[1].SetActive(true);
+                        weapons[2].SetActive(false);
+                        weapons[3].SetActive(false);
+                        setSniper.Post(gameObject);
+                        //SwitchWeapons(1)
+                        break;
+                    }
+                case BulletType.Shotgun:
+                    {
+                        weapons[0].SetActive(false);
+                        weapons[1].SetActive(false);
+                        weapons[2].SetActive(true);
+                        weapons[3].SetActive(false);
+                        setShotgun.Post(gameObject);
+                        //SwitchWeapons(2)
+                        break;
+                    }
+                case BulletType.GrenadeLauncher:
+                    {
+                        weapons[0].SetActive(false);
+                        weapons[1].SetActive(false);
+                        weapons[2].SetActive(false);
+                        weapons[3].SetActive(true);
+                        setGrenade.Post(gameObject);
+                        //SwitchWeapons(3)
+                        break;
+                    }
+            }
         }
     }
 

@@ -99,13 +99,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67264182e979348458a93a91ae1e4363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentryPrefab: {fileID: 7926013325452819026, guid: d5ab5a2ff7c215f468fa16df2e4622f9, type: 3}
-  minSpawnInterval: 10
-  maxSpawnInterval: 20
+  spawnedPrefab: {fileID: 7926013325452819026, guid: d5ab5a2ff7c215f468fa16df2e4622f9, type: 3}
+  minSpawnInterval: 5
+  maxSpawnInterval: 15
   nextSpawnTime: 0
-  _currentSentry: {fileID: 0}
+  _currentSpawned: {fileID: 0}
   isSpawned: 0
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256
-  collision: {x: 0, y: 0, z: 0}

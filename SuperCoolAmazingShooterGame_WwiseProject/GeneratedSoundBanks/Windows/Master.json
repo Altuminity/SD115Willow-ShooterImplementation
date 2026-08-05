@@ -10,10 +10,20 @@
     "Type": "User",
     "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
     "Language": "SFX",
-    "Hash": "{CA82C0F1-7366-6FF1-47E1-862F5ADDBCA8}",
+    "Hash": "{DFCBEA6D-5B8C-5E88-7926-B9C62764843C}",
     "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
+    "Media": [
+     {
+      "Id": "807922162",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "04 John.wav",
+      "CachePath": "1D/{1D7C0683-2CDC-0C7B-EE18-2F33AE0C81E8}.wem"
+     }
+    ],
     "Plugins": {
      "Custom": [
       {
@@ -27,6 +37,18 @@
      ]
     },
     "Events": [
+     {
+      "Id": "4264879856",
+      "Name": "Play_Music_Playlist",
+      "ObjectPath": "\\Events\\Music\\Play_Music_Playlist",
+      "GUID": "{59D085A9-141B-41A0-ADED-861FBFF60C16}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "807922162"
+       }
+      ]
+     },
      {
       "Id": "4283052285",
       "Name": "TestTone",
@@ -46,6 +68,6 @@
     ]
    }
   ],
-  "FileHash": "{0E0F83C3-8D85-3E28-9FD2-F181210FD5EB}"
+  "FileHash": "{E6C6A24E-C00A-BDB9-D7DC-8CC59F3E73FA}"
  }
 }
