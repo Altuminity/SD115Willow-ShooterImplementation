@@ -10,18 +10,34 @@
     "Type": "User",
     "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
     "Language": "SFX",
-    "Hash": "{DFCBEA6D-5B8C-5E88-7926-B9C62764843C}",
+    "Hash": "{14A0C7BB-1232-221F-EC42-1CC88AA94843}",
     "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
     "Media": [
      {
-      "Id": "807922162",
+      "Id": "249174207",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "04 John.wav",
-      "CachePath": "1D/{1D7C0683-2CDC-0C7B-EE18-2F33AE0C81E8}.wem"
+      "ShortName": "BassLoop.wav",
+      "CachePath": "35/{3528D1B0-46FA-C530-7D30-FFF3B9E867A7}.wem"
+     },
+     {
+      "Id": "505764327",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TrumpetLoop.wav",
+      "CachePath": "19/{1981D4A5-1CBD-AC50-C58F-72FBD07C5CB5}.wem"
+     },
+     {
+      "Id": "1012187701",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DrumsLoop.wav",
+      "CachePath": "2B/{2BEB404C-F980-9F1A-AE8F-3349A65ABA2B}.wem"
      }
     ],
     "Plugins": {
@@ -45,7 +61,13 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "807922162"
+        "Id": "249174207"
+       },
+       {
+        "Id": "505764327"
+       },
+       {
+        "Id": "1012187701"
        }
       ]
      },
@@ -65,9 +87,17 @@
        ]
       }
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2653406601",
+      "Name": "RTPC_PlayerSpeed",
+      "ObjectPath": "\\Game Parameters\\RTPC\\RTPC_PlayerSpeed",
+      "GUID": "{E196F123-54B9-42A3-918D-8689297EFA1E}"
+     }
     ]
    }
   ],
-  "FileHash": "{E6C6A24E-C00A-BDB9-D7DC-8CC59F3E73FA}"
+  "FileHash": "{A030D5F8-0DE4-12F7-8C4C-0918CAFC6610}"
  }
 }
