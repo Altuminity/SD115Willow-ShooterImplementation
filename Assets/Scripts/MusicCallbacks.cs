@@ -16,25 +16,12 @@ public class MusicCallbacks : MonoBehaviour
     private void Start()
     {
         musicEvent.Post(gameObject, 
-                (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncUserCue),
+                (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar),
                 OnMusicCallback
             );
     }
 
-    void OnMusicCallback(object in_cookie, AkCallbackType in_Type, AkCallbackInfo in_info)
-    {
-        if (in_Type == AkCallbackType.AK_MusicSyncBeat)
-        {
-            beatLightTarget = pulseIntensity;
-        }
-
-        if (in_Type == AkCallbackType.AK_MusicSyncUserCue)
-        {
-            AkMusicSyncCallbackInfo info = (AkMusicSyncCallbackInfo) in_info;
-
-            colorTarget = Random.ColorHSV();
-        }
-    }
+    
 
     private void Update()
     {

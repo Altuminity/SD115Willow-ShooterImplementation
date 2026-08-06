@@ -15,11 +15,25 @@ public class MusicManager : MonoBehaviour
     private void Start()
     {
         setGameState.Post(gameObject);
-        musicEvent.Post(gameObject);
+        musicEvent.Post(gameObject,
+            (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar),
+                OnMusicCallback
+            );
     }
 
     private void Update()
     {
         playerSpeed.SetValue(gameObject, charCon.velocity.magnitude);
+    }
+
+    void OnMusicCallback(object in_cookie, AkCallbackType in_Type, AkCallbackInfo in_info)
+    {
+        if (in_Type == AkCallbackType.AK_MusicSyncBeat)
+        {
+        }
+
+        if (in_Type == AkCallbackType.AK_MusicSyncBar)
+        {
+        }
     }
 }
