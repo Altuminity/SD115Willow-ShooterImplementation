@@ -1,3 +1,6 @@
+26/08/04
+-added a music manager object with a music manager script. Get this, it manages all the music...
+
 26/08/03
 -added new spawner script for overall generic use. It will detect if an object of a certain layer is currently hitting a raycast and when there is NO object it will spawn a new one, currently implemented in the level as 4 sentry spawners surrounding the player.
 
