@@ -36,6 +36,7 @@ public class WeaponSystem : MonoBehaviour
 
     [Header("Wwise Events")]
     public AK.Wwise.Event genericFireEvent;
+    public AK.Wwise.Event genericPickupEvent;
     public AK.Wwise.Event setPaintball;
     public AK.Wwise.Event setSniper;
     public AK.Wwise.Event setShotgun;
@@ -61,6 +62,7 @@ public class WeaponSystem : MonoBehaviour
         playerCollider = GetComponentInParent<CharacterController>();
 
         WeaponSwitch(BulletType.Paintball);
+        setPaintball.Post(gameObject);
     }
 
     void Update()
@@ -248,6 +250,8 @@ public class WeaponSystem : MonoBehaviour
                     }
             }
         }
+
+
     }
 
     private void SwitchWeapons(int weaponsIndex)

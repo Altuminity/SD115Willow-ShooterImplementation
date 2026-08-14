@@ -18,6 +18,8 @@ public class MusicCallbacks : MonoBehaviour
         musicEvent.Post(gameObject, 
                 (uint)(AkCallbackType.AK_MusicSyncBeat | AkCallbackType.AK_MusicSyncBar),
                 OnMusicCallback
+
+
             );
     }
 
@@ -28,5 +30,18 @@ public class MusicCallbacks : MonoBehaviour
         beatLight.intensity = Mathf.Lerp(beatLight.intensity, beatLightTarget, fadeSpeed * Time.deltaTime);
         beatLightTarget = Mathf.Lerp(beatLightTarget, 0f, fadeSpeed * Time.deltaTime);
         beatLight.color = colorTarget;
+    }
+
+    void OnMusicCallback(object in_cookie, AkCallbackType in_type, AkCallbackInfo in_info)
+    {
+        if (in_type == AkCallbackType.AK_MusicSyncBeat)
+        {
+            beatLight.intensity = pulseIntensity;
+        }
+
+        if (in_type == AkCallbackType.AK_MusicSyncBar)
+        {
+            colorTarget = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+        }
     }
 }

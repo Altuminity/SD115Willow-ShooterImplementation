@@ -1,6 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CD9F1318-579B-4454-BD39-280C8B31656B}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Weapons" ID="{CD9F1318-579B-4454-BD39-280C8B31656B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Weapons" ID="{CD9F1318-579B-4454-BD39-280C8B31656B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SwitchEvents" ID="{9862AB4A-E7EC-4807-8C42-00F6760E6EEB}" ShortID="890852008">
+					<ChildrenList>
+						<Event Name="Switch_Grenade" ID="{4B486635-AE66-42C6-88B4-DA6CA5054EF1}">
+							<ChildrenList>
+								<Action Name="" ID="{6709986C-3AC8-4C2D-9891-FF1086907E4D}" ShortID="128141451">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Grenade" ID="{BFE6A38E-07A9-466C-8F51-4774C819E152}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Pistol" ID="{5AC274DE-676A-4376-BDA0-27FA7DCE5B47}">
+							<ChildrenList>
+								<Action Name="" ID="{9F94B858-E425-4447-9BD6-B0B6C8E15AFF}" ShortID="265950497">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Paintball" ID="{8DC9E72A-901E-4613-918A-CF152574CC08}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Shotgun" ID="{A07BC859-88ED-41FB-B87F-6BEEA79A3A53}">
+							<ChildrenList>
+								<Action Name="" ID="{BF5E9E78-9A10-4F2D-B05F-031C5C202EE4}" ShortID="605041079">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shotgun" ID="{C3AFA552-4DA9-488F-9E57-6610C7852E99}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Switch_Sniper" ID="{27911362-A139-451F-B8ED-D3D781E2CFB3}">
+							<ChildrenList>
+								<Action Name="" ID="{E8E096F8-8A75-4CBA-9AEF-072DE4D204D6}" ShortID="889471520">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sniper" ID="{E1460A03-C53D-4473-B142-F9E7178A02A1}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="genericFireEvent" ID="{6996D648-36B6-4DBD-825A-77F1DDB64425}">
+					<ChildrenList>
+						<Action Name="" ID="{0B72A781-D432-47F5-8CB7-5E6DF853C0BA}" ShortID="71555011">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SW_Fire" ID="{12F1DEE8-4674-4A0B-B384-956E115FD4F4}" WorkUnitID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="genericPickupEvent" ID="{29E84FAF-8955-48A8-ADA2-B14B8D6A46EA}">
+					<ChildrenList>
+						<Action Name="" ID="{B201B98B-46DE-4B19-8682-2B5F78021428}" ShortID="681763487">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SW_WeaponPickup" ID="{3AA8DA95-D416-4548-B93B-4DABA0AEAB1D}" WorkUnitID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="bulletImpactEvent" ID="{A5606836-13BA-4BFF-B722-89FDA8EDAE48}">
+					<ChildrenList>
+						<Action Name="" ID="{3FAFADFE-4089-4A47-8A06-63B196F49B46}" ShortID="395961588">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="genericBulletImpact" ID="{116FE0B7-737B-45C2-BB46-8ADFD5DA7030}" WorkUnitID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

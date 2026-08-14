@@ -7,7 +7,6 @@ public class Paintball : MonoBehaviour
 
     private Vector3 previousPosition;
 
-    public GameObject paintballHitSound;
 
     void Start()
     {
@@ -24,34 +23,6 @@ public class Paintball : MonoBehaviour
         if (health != null)
             health.TakeDamage(damage);
 
-        Instantiate(paintballHitSound, transform.position, Quaternion.identity);
-
         Destroy(gameObject);
-    }
-
-    private void FixedUpdate() //ontrigger enter wasnt working for detecting the player so ive opted to use a raycast that detects when the paintball has crossed paths with the player
-    {
-        Vector3 currentPosition = transform.position;
-        Vector3 direction = currentPosition - previousPosition;
-        float distance = direction.magnitude;
-
-        if (distance > 0f)
-        {
-            RaycastHit hit;
-            if(Physics.Raycast(previousPosition, direction.normalized, out hit, distance))
-            {
-                if(hit.collider.CompareTag("Player"))
-                {
-                    Debug.Log("hit the player!");
-                    Health health = hit.collider.GetComponent<Health>();
-                    if(health != null)
-                        health.TakeDamage(damage);
-
-                    Instantiate(paintballHitSound, transform.position, Quaternion.identity);
-
-                    Destroy(gameObject);
-                }
-            }
-        }
     }
 }

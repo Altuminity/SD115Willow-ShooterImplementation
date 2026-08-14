@@ -252,6 +252,36 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.1
       minDuration: 0.1
+  - PhysicalPath: Events\UI.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: UI
+      ObjectType: 12
+      guid: 105fa20382bcf14092579dee050158b3
+    ParentPath: Events\UI
+    guid: 105fa20382bcf14092579dee050158b3
+    GuidInternal: 
+    m_lastTime: -8584149411385988406
+    List:
+    - name: UI_Click
+      guid: 42ec8f71e3f8de4fbb5c04d7ab71a0f5
+      id: 2249769530
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: UI
+        ObjectType: 12
+        guid: 105fa20382bcf14092579dee050158b3
+      - ElementName: UI_Click
+        ObjectType: 3
+        guid: 42ec8f71e3f8de4fbb5c04d7ab71a0f5
+      Path: Events\UI\UI_Click
+      maxAttenuation: 0
+      maxDuration: 0.6526711
+      minDuration: 0.47880167
   - PhysicalPath: Events\Weapons.wwu
     PathAndIcons:
     - ElementName: Events
@@ -263,8 +293,156 @@ MonoBehaviour:
     ParentPath: Events\Weapons
     guid: 18139fcd9b575444bd39280c8b31656b
     GuidInternal: 
-    m_lastTime: -8584157269894181366
-    List: []
+    m_lastTime: -8584149411386076411
+    List:
+    - name: bulletImpactEvent
+      guid: 366860a5ba13ff4bb72289fda8edae48
+      id: 1731193453
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: 18139fcd9b575444bd39280c8b31656b
+      - ElementName: bulletImpactEvent
+        ObjectType: 3
+        guid: 366860a5ba13ff4bb72289fda8edae48
+      Path: Events\Weapons\bulletImpactEvent
+      maxAttenuation: 0
+      maxDuration: 0.7541308
+      minDuration: 0.59855396
+    - name: genericFireEvent
+      guid: 48d69669b636bd4d825a77f1ddb64425
+      id: 2987776788
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: 18139fcd9b575444bd39280c8b31656b
+      - ElementName: genericFireEvent
+        ObjectType: 3
+        guid: 48d69669b636bd4d825a77f1ddb64425
+      Path: Events\Weapons\genericFireEvent
+      maxAttenuation: 0
+      maxDuration: 1.432
+      minDuration: 0.32533333
+    - name: genericPickupEvent
+      guid: af4fe8295589a848ada2b14b8d6a46ea
+      id: 2525836540
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: 18139fcd9b575444bd39280c8b31656b
+      - ElementName: genericPickupEvent
+        ObjectType: 3
+        guid: af4fe8295589a848ada2b14b8d6a46ea
+      Path: Events\Weapons\genericPickupEvent
+      maxAttenuation: 0
+      maxDuration: 0.88266665
+      minDuration: 0.6293333
+    - name: Switch_Grenade
+      guid: 3566484b66aec64288b4da6ca5054ef1
+      id: 1405900730
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: 18139fcd9b575444bd39280c8b31656b
+      - ElementName: SwitchEvents
+        ObjectType: 4
+        guid: 4aab6298ece707488c4200f6760e6eeb
+      - ElementName: Switch_Grenade
+        ObjectType: 3
+        guid: 3566484b66aec64288b4da6ca5054ef1
+      Path: Events\Weapons\SwitchEvents\Switch_Grenade
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Switch_Pistol
+      guid: de74c25a6a677643bda027fa7dce5b47
+      id: 1175795581
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: 18139fcd9b575444bd39280c8b31656b
+      - ElementName: SwitchEvents
+        ObjectType: 4
+        guid: 4aab6298ece707488c4200f6760e6eeb
+      - ElementName: Switch_Pistol
+        ObjectType: 3
+        guid: de74c25a6a677643bda027fa7dce5b47
+      Path: Events\Weapons\SwitchEvents\Switch_Pistol
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Switch_Shotgun
+      guid: 59c87ba0ed88fb41b87f6beea79a3a53
+      id: 1286217182
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: 18139fcd9b575444bd39280c8b31656b
+      - ElementName: SwitchEvents
+        ObjectType: 4
+        guid: 4aab6298ece707488c4200f6760e6eeb
+      - ElementName: Switch_Shotgun
+        ObjectType: 3
+        guid: 59c87ba0ed88fb41b87f6beea79a3a53
+      Path: Events\Weapons\SwitchEvents\Switch_Shotgun
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Switch_Sniper
+      guid: 6213912739a11f45b8edd3d781e2cfb3
+      id: 3562493961
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: 18139fcd9b575444bd39280c8b31656b
+      - ElementName: SwitchEvents
+        ObjectType: 4
+        guid: 4aab6298ece707488c4200f6760e6eeb
+      - ElementName: Switch_Sniper
+        ObjectType: 3
+        guid: 6213912739a11f45b8edd3d781e2cfb3
+      Path: Events\Weapons\SwitchEvents\Switch_Sniper
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SwitchEvents
+      guid: 4aab6298ece707488c4200f6760e6eeb
+      id: 59697198
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Weapons
+        ObjectType: 12
+        guid: 18139fcd9b575444bd39280c8b31656b
+      - ElementName: SwitchEvents
+        ObjectType: 4
+        guid: 4aab6298ece707488c4200f6760e6eeb
+      Path: Events\Weapons\SwitchEvents
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -523,7 +701,7 @@ MonoBehaviour:
     m_lastTime: -8584162672433819941
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000080000000a0000000c0000000e00000010000000110000001d0000001f000000
+  ExpandedWaapiItemIds: 0500000006000000080000000a0000000c0000000e0000001000000011000000150000001d0000001f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

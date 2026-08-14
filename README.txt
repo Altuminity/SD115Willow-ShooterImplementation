@@ -1,5 +1,10 @@
+26/08/13
+-added multiple sounds to the wwise project (CHECK SOUNDREADME)
+-changed the projectiles that the enemy shoots to be enemy paintballs due to a bug with having all the diff paintball logic on one paintball caused the player to shoot themselves many times when running in the direction they shot in. player paintballs now shoot collision based detection, and enemies now shoot raycast based detection
+
 26/08/04
 -added a music manager object with a music manager script. Get this, it manages all the music...
+It also has callbacks that pulse the lights on the beat, and change the color on the bar
 
 26/08/03
 -added new spawner script for overall generic use. It will detect if an object of a certain layer is currently hitting a raycast and when there is NO object it will spawn a new one, currently implemented in the level as 4 sentry spawners surrounding the player.

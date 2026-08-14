@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1489881362430010628}
-  paintballPrefab: {fileID: 1955116497652083709, guid: efd8b20fa61ed8142ada6e6cdc5817a5, type: 3}
+  paintballPrefab: {fileID: 1955116497652083709, guid: cc65899cc2c13ec438808e06d4927656, type: 3}
   grenadePrefab: {fileID: 0}
   paintballSpeed: 20
   sniperRange: 200
@@ -111,6 +111,10 @@ MonoBehaviour:
   currentFireRate: 0.2
   storedFireRate: 0
   genericFireEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  genericPickupEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}

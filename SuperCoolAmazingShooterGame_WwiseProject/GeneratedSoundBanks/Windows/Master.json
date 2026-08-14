@@ -10,11 +10,51 @@
     "Type": "User",
     "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
     "Language": "SFX",
-    "Hash": "{D2D50CE4-3FFE-3911-C177-F943DD495619}",
+    "Hash": "{B667616F-9529-CDD7-C3EE-C628C277D264}",
     "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
     "Media": [
+     {
+      "Id": "20073259",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GrenadeSwitch_4.wav",
+      "CachePath": "36/{362DC318-B585-660D-14AA-B49AC8C70E3A}.wem"
+     },
+     {
+      "Id": "59402383",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GrenadeSwitch_3.wav",
+      "CachePath": "7E/{7EF283AF-886F-66E3-E6DB-6C0F297F8374}.wem"
+     },
+     {
+      "Id": "66304737",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SniperShot_1.wav",
+      "CachePath": "7F/{7F93A383-8645-EF54-A0C4-7B0D1D32D3A7}.wem"
+     },
+     {
+      "Id": "96836893",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PistolShot_2.wav",
+      "CachePath": "38/{38757C8B-B7BE-6266-C9A1-507D70F37D63}.wem"
+     },
+     {
+      "Id": "147526480",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_1.wav",
+      "CachePath": "D2/{D2BF6B0D-75CC-F460-85FD-9F6D4A213DE3}.wem"
+     },
      {
       "Id": "163910720",
       "Language": "SFX",
@@ -22,6 +62,30 @@
       "Location": "Memory",
       "ShortName": "TrumpetEnd.wav",
       "CachePath": "B0/{B04495C5-3F03-BDFD-5868-F9363C899B96}.wem"
+     },
+     {
+      "Id": "184113974",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ShotgunShot_3.wav",
+      "CachePath": "91/{91F656FF-A6EA-1A68-2C4C-D9DD96CD7141}.wem"
+     },
+     {
+      "Id": "195799463",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ShotgunSwitch.wav",
+      "CachePath": "18/{189A6C44-FD99-BA73-1AE4-F18256A4665E}.wem"
+     },
+     {
+      "Id": "212391361",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GrenadeSwitch_2.wav",
+      "CachePath": "D5/{D543AFFB-A520-F36C-8657-F48BE713F15A}.wem"
      },
      {
       "Id": "249174207",
@@ -32,12 +96,44 @@
       "CachePath": "35/{3528D1B0-46FA-C530-7D30-FFF3B9E867A7}.wem"
      },
      {
+      "Id": "281392890",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "genericBulletImpact.wav",
+      "CachePath": "5F/{5F448038-2AD4-48B3-8D07-DA9B9EDD93DB}.wem"
+     },
+     {
       "Id": "292184215",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "DrumsEnd.wav",
       "CachePath": "FC/{FC8EEF24-C362-27B0-B939-262A2FF186AC}.wem"
+     },
+     {
+      "Id": "371853762",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GrenadeShot.wav",
+      "CachePath": "93/{9303BB0F-926A-3882-F6AF-3A9982831A60}.wem"
+     },
+     {
+      "Id": "398777468",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PistolSwitch.wav",
+      "CachePath": "19/{195E30F0-3BD7-DA59-1C68-9550F5A72CB6}.wem"
+     },
+     {
+      "Id": "449649218",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SniperShot_5.wav",
+      "CachePath": "A2/{A2CE899A-98A0-EBF4-E160-012DCB477CB2}.wem"
      },
      {
       "Id": "505764327",
@@ -48,6 +144,78 @@
       "CachePath": "19/{1981D4A5-1CBD-AC50-C58F-72FBD07C5CB5}.wem"
      },
      {
+      "Id": "539195036",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SniperShot_6.wav",
+      "CachePath": "24/{24A67B6C-E574-E33F-7613-BB3D4FB81AD1}.wem"
+     },
+     {
+      "Id": "543162481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ShotgunShot_5.wav",
+      "CachePath": "BA/{BABF6682-B007-F71D-9F02-397F9A4DF12A}.wem"
+     },
+     {
+      "Id": "575062648",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PistolShot_01.wav",
+      "CachePath": "49/{49F6F04E-CC08-23EA-A82B-A28627CDCC06}.wem"
+     },
+     {
+      "Id": "638456630",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SniperShot_3.wav",
+      "CachePath": "8A/{8A1C32F7-F39A-463C-A12E-B34B3855156A}.wem"
+     },
+     {
+      "Id": "644668777",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SniperSwitch.wav",
+      "CachePath": "EC/{ECDE545B-F6E9-9C22-E269-5AE0F809190C}.wem"
+     },
+     {
+      "Id": "769219218",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ShotgunShot_4.wav",
+      "CachePath": "51/{5136778A-E2AF-07F0-6B71-72D25D715233}.wem"
+     },
+     {
+      "Id": "809065538",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_2.wav",
+      "CachePath": "E3/{E3FFF92E-5524-A271-E4D6-42809986851E}.wem"
+     },
+     {
+      "Id": "826774366",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SniperShot_4.wav",
+      "CachePath": "62/{62CADEEF-64BE-40A7-F979-D4BC7E25D53F}.wem"
+     },
+     {
+      "Id": "854661924",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_4.wav",
+      "CachePath": "98/{986374E3-01C0-7C3B-C78D-AC599A71A50E}.wem"
+     },
+     {
       "Id": "877792112",
       "Language": "SFX",
       "Streaming": "false",
@@ -56,12 +224,60 @@
       "CachePath": "2C/{2C3A542D-47E2-9410-6870-539D7C10F386}.wem"
      },
      {
+      "Id": "878925103",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ShotgunShot_2.wav",
+      "CachePath": "38/{38E937D3-A55B-4986-1F1B-3E187DE2DCFD}.wem"
+     },
+     {
+      "Id": "880015288",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ShotgunShot_1.wav",
+      "CachePath": "86/{867CD72A-AEF6-0453-EE84-33E050051C23}.wem"
+     },
+     {
+      "Id": "912640149",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SniperShot_2.wav",
+      "CachePath": "91/{911AC00E-E025-4D02-468B-87CB36EEC801}.wem"
+     },
+     {
+      "Id": "930500244",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PistolShot_3.wav",
+      "CachePath": "2B/{2BE8E302-8BA5-47A2-39BF-57DF691B2787}.wem"
+     },
+     {
       "Id": "1012187701",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "DrumsLoop.wav",
       "CachePath": "2B/{2BEB404C-F980-9F1A-AE8F-3349A65ABA2B}.wem"
+     },
+     {
+      "Id": "1016104414",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GrenadeSwitch_1.wav",
+      "CachePath": "F8/{F8DF7611-51B7-6231-291B-6490E60D231C}.wem"
+     },
+     {
+      "Id": "1062137369",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UI_3.wav",
+      "CachePath": "27/{27FB9493-2D21-A64B-D40B-025C8DB1B421}.wem"
      }
     ],
     "Plugins": {
@@ -77,6 +293,190 @@
      ]
     },
     "Events": [
+     {
+      "Id": "1731193453",
+      "Name": "bulletImpactEvent",
+      "ObjectPath": "\\Events\\Weapons\\bulletImpactEvent",
+      "GUID": "{A5606836-13BA-4BFF-B722-89FDA8EDAE48}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.59855396",
+      "DurationMax": "0.7541308",
+      "MediaRefs": [
+       {
+        "Id": "281392890"
+       }
+      ]
+     },
+     {
+      "Id": "2987776788",
+      "Name": "genericFireEvent",
+      "ObjectPath": "\\Events\\Weapons\\genericFireEvent",
+      "GUID": "{6996D648-36B6-4DBD-825A-77F1DDB64425}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.32533333",
+      "DurationMax": "1.432",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2593986681",
+         "Id": "2550763292",
+         "GUID": "{E1460A03-C53D-4473-B142-F9E7178A02A1}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "66304737"
+         },
+         {
+          "Id": "449649218"
+         },
+         {
+          "Id": "539195036"
+         },
+         {
+          "Id": "638456630"
+         },
+         {
+          "Id": "826774366"
+         },
+         {
+          "Id": "912640149"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2593986681",
+         "Id": "70791844",
+         "GUID": "{8DC9E72A-901E-4613-918A-CF152574CC08}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "96836893"
+         },
+         {
+          "Id": "575062648"
+         },
+         {
+          "Id": "930500244"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2593986681",
+         "Id": "51683977",
+         "GUID": "{C3AFA552-4DA9-488F-9E57-6610C7852E99}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "184113974"
+         },
+         {
+          "Id": "543162481"
+         },
+         {
+          "Id": "769219218"
+         },
+         {
+          "Id": "878925103"
+         },
+         {
+          "Id": "880015288"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2593986681",
+         "Id": "3255686181",
+         "GUID": "{BFE6A38E-07A9-466C-8F51-4774C819E152}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "371853762"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2525836540",
+      "Name": "genericPickupEvent",
+      "ObjectPath": "\\Events\\Weapons\\genericPickupEvent",
+      "GUID": "{29E84FAF-8955-48A8-ADA2-B14B8D6A46EA}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6293333",
+      "DurationMax": "0.88266665",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2593986681",
+         "Id": "2550763292",
+         "GUID": "{E1460A03-C53D-4473-B142-F9E7178A02A1}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "644668777"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2593986681",
+         "Id": "70791844",
+         "GUID": "{8DC9E72A-901E-4613-918A-CF152574CC08}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "398777468"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2593986681",
+         "Id": "51683977",
+         "GUID": "{C3AFA552-4DA9-488F-9E57-6610C7852E99}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "195799463"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2593986681",
+         "Id": "3255686181",
+         "GUID": "{BFE6A38E-07A9-466C-8F51-4774C819E152}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "20073259"
+         },
+         {
+          "Id": "59402383"
+         },
+         {
+          "Id": "212391361"
+         },
+         {
+          "Id": "1016104414"
+         }
+        ]
+       }
+      ]
+     },
      {
       "Id": "4264879856",
       "Name": "Play_Music_Playlist",
@@ -182,6 +582,82 @@
       ]
      },
      {
+      "Id": "1405900730",
+      "Name": "Switch_Grenade",
+      "ObjectPath": "\\Events\\Weapons\\SwitchEvents\\Switch_Grenade",
+      "GUID": "{4B486635-AE66-42C6-88B4-DA6CA5054EF1}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2593986681",
+        "Id": "3255686181",
+        "Name": "Grenade",
+        "ObjectPath": "\\Switches\\Weapons\\weaponFireSwitch\\Grenade",
+        "GUID": "{BFE6A38E-07A9-466C-8F51-4774C819E152}"
+       }
+      ]
+     },
+     {
+      "Id": "1175795581",
+      "Name": "Switch_Pistol",
+      "ObjectPath": "\\Events\\Weapons\\SwitchEvents\\Switch_Pistol",
+      "GUID": "{5AC274DE-676A-4376-BDA0-27FA7DCE5B47}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2593986681",
+        "Id": "70791844",
+        "Name": "Paintball",
+        "ObjectPath": "\\Switches\\Weapons\\weaponFireSwitch\\Paintball",
+        "GUID": "{8DC9E72A-901E-4613-918A-CF152574CC08}"
+       }
+      ]
+     },
+     {
+      "Id": "1286217182",
+      "Name": "Switch_Shotgun",
+      "ObjectPath": "\\Events\\Weapons\\SwitchEvents\\Switch_Shotgun",
+      "GUID": "{A07BC859-88ED-41FB-B87F-6BEEA79A3A53}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2593986681",
+        "Id": "51683977",
+        "Name": "Shotgun",
+        "ObjectPath": "\\Switches\\Weapons\\weaponFireSwitch\\Shotgun",
+        "GUID": "{C3AFA552-4DA9-488F-9E57-6610C7852E99}"
+       }
+      ]
+     },
+     {
+      "Id": "3562493961",
+      "Name": "Switch_Sniper",
+      "ObjectPath": "\\Events\\Weapons\\SwitchEvents\\Switch_Sniper",
+      "GUID": "{27911362-A139-451F-B8ED-D3D781E2CFB3}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2593986681",
+        "Id": "2550763292",
+        "Name": "Sniper",
+        "ObjectPath": "\\Switches\\Weapons\\weaponFireSwitch\\Sniper",
+        "GUID": "{E1460A03-C53D-4473-B142-F9E7178A02A1}"
+       }
+      ]
+     },
+     {
       "Id": "4283052285",
       "Name": "TestTone",
       "ObjectPath": "\\Events\\TestTone\\TestTone",
@@ -196,6 +672,29 @@
         }
        ]
       }
+     },
+     {
+      "Id": "2249769530",
+      "Name": "UI_Click",
+      "ObjectPath": "\\Events\\UI\\UI_Click",
+      "GUID": "{718FEC42-F8E3-4FDE-BB5C-04D7AB71A0F5}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.47880167",
+      "DurationMax": "0.6526711",
+      "MediaRefs": [
+       {
+        "Id": "147526480"
+       },
+       {
+        "Id": "809065538"
+       },
+       {
+        "Id": "854661924"
+       },
+       {
+        "Id": "1062137369"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -233,9 +732,43 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2593986681",
+      "Name": "weaponFireSwitch",
+      "ObjectPath": "\\Switches\\Weapons\\weaponFireSwitch",
+      "GUID": "{E27CF2DF-B82A-4B15-9360-DDCA0B2C7710}",
+      "Switches": [
+       {
+        "Id": "51683977",
+        "Name": "Shotgun",
+        "ObjectPath": "\\Switches\\Weapons\\weaponFireSwitch\\Shotgun",
+        "GUID": "{C3AFA552-4DA9-488F-9E57-6610C7852E99}"
+       },
+       {
+        "Id": "70791844",
+        "Name": "Paintball",
+        "ObjectPath": "\\Switches\\Weapons\\weaponFireSwitch\\Paintball",
+        "GUID": "{8DC9E72A-901E-4613-918A-CF152574CC08}"
+       },
+       {
+        "Id": "2550763292",
+        "Name": "Sniper",
+        "ObjectPath": "\\Switches\\Weapons\\weaponFireSwitch\\Sniper",
+        "GUID": "{E1460A03-C53D-4473-B142-F9E7178A02A1}"
+       },
+       {
+        "Id": "3255686181",
+        "Name": "Grenade",
+        "ObjectPath": "\\Switches\\Weapons\\weaponFireSwitch\\Grenade",
+        "GUID": "{BFE6A38E-07A9-466C-8F51-4774C819E152}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{9E7E05EE-FB4B-0D1B-9B61-179D68942972}"
+  "FileHash": "{373262D2-000C-0526-AB69-73A626EE3BAC}"
  }
 }
