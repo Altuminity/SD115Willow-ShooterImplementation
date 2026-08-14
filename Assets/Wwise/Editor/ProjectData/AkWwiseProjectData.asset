@@ -293,7 +293,7 @@ MonoBehaviour:
     ParentPath: Events\Weapons
     guid: 18139fcd9b575444bd39280c8b31656b
     GuidInternal: 
-    m_lastTime: -8584149411386076411
+    m_lastTime: -8584149392438001108
     List:
     - name: bulletImpactEvent
       guid: 366860a5ba13ff4bb72289fda8edae48
@@ -344,8 +344,8 @@ MonoBehaviour:
         guid: af4fe8295589a848ada2b14b8d6a46ea
       Path: Events\Weapons\genericPickupEvent
       maxAttenuation: 0
-      maxDuration: 0.88266665
-      minDuration: 0.6293333
+      maxDuration: 0.9907598
+      minDuration: 0.5940115
     - name: Switch_Grenade
       guid: 3566484b66aec64288b4da6ca5054ef1
       id: 1405900730
@@ -364,8 +364,8 @@ MonoBehaviour:
         guid: 3566484b66aec64288b4da6ca5054ef1
       Path: Events\Weapons\SwitchEvents\Switch_Grenade
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.9817802
+      minDuration: 0.68210644
     - name: Switch_Pistol
       guid: de74c25a6a677643bda027fa7dce5b47
       id: 1175795581
@@ -384,8 +384,8 @@ MonoBehaviour:
         guid: de74c25a6a677643bda027fa7dce5b47
       Path: Events\Weapons\SwitchEvents\Switch_Pistol
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.9907598
+      minDuration: 0.8331263
     - name: Switch_Shotgun
       guid: 59c87ba0ed88fb41b87f6beea79a3a53
       id: 1286217182
@@ -404,8 +404,8 @@ MonoBehaviour:
         guid: 59c87ba0ed88fb41b87f6beea79a3a53
       Path: Events\Weapons\SwitchEvents\Switch_Shotgun
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.7064028
+      minDuration: 0.5940115
     - name: Switch_Sniper
       guid: 6213912739a11f45b8edd3d781e2cfb3
       id: 3562493961
@@ -424,8 +424,8 @@ MonoBehaviour:
         guid: 6213912739a11f45b8edd3d781e2cfb3
       Path: Events\Weapons\SwitchEvents\Switch_Sniper
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.74830806
+      minDuration: 0.6292495
     - name: SwitchEvents
       guid: 4aab6298ece707488c4200f6760e6eeb
       id: 59697198
