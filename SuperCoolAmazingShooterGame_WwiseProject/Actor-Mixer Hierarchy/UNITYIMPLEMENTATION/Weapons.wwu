@@ -65,7 +65,7 @@
 										<ActiveSource Name="GrenadeShot" ID="{ABC46A51-C1F4-4202-86B0-2B05EFAC2310}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<RandomSequenceContainer Name="pistolShot" ID="{1ECF8A81-4BF8-43B9-A51E-CE66D1099601}" ShortID="313532961">
+								<RandomSequenceContainer Name="sniperShot" ID="{1ECF8A81-4BF8-43B9-A51E-CE66D1099601}" ShortID="313532961">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
@@ -265,7 +265,7 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="sniperShot" ID="{B1D803FD-FC54-4240-AAD6-1D884C6B9806}" ShortID="536410230">
+								<RandomSequenceContainer Name="pistolShot" ID="{B1D803FD-FC54-4240-AAD6-1D884C6B9806}" ShortID="536410230">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
@@ -419,23 +419,23 @@
 										<ItemRef Name="grenadeShot" ID="{F9A4A813-C5B1-43A5-B57E-2B51105745D3}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="pistolShot" ID="{1ECF8A81-4BF8-43B9-A51E-CE66D1099601}"/>
+										<ItemRef Name="sniperShot" ID="{1ECF8A81-4BF8-43B9-A51E-CE66D1099601}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="sniperShot" ID="{B1D803FD-FC54-4240-AAD6-1D884C6B9806}"/>
+										<ItemRef Name="pistolShot" ID="{B1D803FD-FC54-4240-AAD6-1D884C6B9806}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="Sniper" ID="{E1460A03-C53D-4473-B142-F9E7178A02A1}"/>
 										<ItemList>
-											<ItemRef Name="sniperShot" ID="{B1D803FD-FC54-4240-AAD6-1D884C6B9806}"/>
+											<ItemRef Name="sniperShot" ID="{1ECF8A81-4BF8-43B9-A51E-CE66D1099601}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Paintball" ID="{8DC9E72A-901E-4613-918A-CF152574CC08}"/>
 										<ItemList>
-											<ItemRef Name="pistolShot" ID="{1ECF8A81-4BF8-43B9-A51E-CE66D1099601}"/>
+											<ItemRef Name="pistolShot" ID="{B1D803FD-FC54-4240-AAD6-1D884C6B9806}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -501,6 +501,21 @@
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="SW_WeaponPickup" ID="{3AA8DA95-D416-4548-B93B-4DABA0AEAB1D}" ShortID="539412495">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{560742E6-4162-4E2F-ABDE-C6CFB0A08873}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>

@@ -17,6 +17,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{BDC40513-45C0-4A53-A043-2FFC343F76F0}" ShortID="708375187">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="grenadeSwitch" ID="{37D356E1-E414-4ED6-B617-78F438C86B13}" WorkUnitID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Switch_Pistol" ID="{5AC274DE-676A-4376-BDA0-27FA7DCE5B47}">
@@ -28,6 +35,13 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Paintball" ID="{8DC9E72A-901E-4613-918A-CF152574CC08}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AAFC19FB-7386-4F09-86AA-8B3CBBC0522F}" ShortID="617634347">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="pistolSwitch" ID="{88E07F17-70E0-4EF0-B19A-813528923D74}" WorkUnitID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -45,6 +59,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{DBB899EE-AC84-4B1C-BFA8-33213D937DA8}" ShortID="41906577">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="shotgunSwitch" ID="{4B9B2813-9A74-4BA9-8088-EB6D442F396A}" WorkUnitID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Switch_Sniper" ID="{27911362-A139-451F-B8ED-D3D781E2CFB3}">
@@ -56,6 +77,13 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Sniper" ID="{E1460A03-C53D-4473-B142-F9E7178A02A1}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7AFD1E8F-C6E0-48ED-87F1-174BC1F0ECF3}" ShortID="147090183">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sniperSwitch" ID="{6355F095-D697-4AD9-B598-96AD8A66E025}" WorkUnitID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

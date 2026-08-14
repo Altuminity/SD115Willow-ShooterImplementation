@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
     "Language": "SFX",
-    "Hash": "{B667616F-9529-CDD7-C3EE-C628C277D264}",
+    "Hash": "{883B7E3A-44A4-E56D-7E2C-1D171DF41C79}",
     "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -325,6 +325,26 @@
         },
         "MediaRefs": [
          {
+          "Id": "96836893"
+         },
+         {
+          "Id": "575062648"
+         },
+         {
+          "Id": "930500244"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2593986681",
+         "Id": "70791844",
+         "GUID": "{8DC9E72A-901E-4613-918A-CF152574CC08}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
           "Id": "66304737"
          },
          {
@@ -341,26 +361,6 @@
          },
          {
           "Id": "912640149"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "2593986681",
-         "Id": "70791844",
-         "GUID": "{8DC9E72A-901E-4613-918A-CF152574CC08}",
-         "Default": "true"
-        },
-        "MediaRefs": [
-         {
-          "Id": "96836893"
-         },
-         {
-          "Id": "575062648"
-         },
-         {
-          "Id": "930500244"
          }
         ]
        },
@@ -410,8 +410,8 @@
       "ObjectPath": "\\Events\\Weapons\\genericPickupEvent",
       "GUID": "{29E84FAF-8955-48A8-ADA2-B14B8D6A46EA}",
       "DurationType": "OneShot",
-      "DurationMin": "0.6293333",
-      "DurationMax": "0.88266665",
+      "DurationMin": "0.5940115",
+      "DurationMax": "0.9907598",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -586,10 +586,23 @@
       "Name": "Switch_Grenade",
       "ObjectPath": "\\Events\\Weapons\\SwitchEvents\\Switch_Grenade",
       "GUID": "{4B486635-AE66-42C6-88B4-DA6CA5054EF1}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.68210644",
+      "DurationMax": "0.9817802",
+      "MediaRefs": [
+       {
+        "Id": "20073259"
+       },
+       {
+        "Id": "59402383"
+       },
+       {
+        "Id": "212391361"
+       },
+       {
+        "Id": "1016104414"
+       }
+      ],
       "ActionSetSwitch": [
        {
         "GroupId": "2593986681",
@@ -605,10 +618,14 @@
       "Name": "Switch_Pistol",
       "ObjectPath": "\\Events\\Weapons\\SwitchEvents\\Switch_Pistol",
       "GUID": "{5AC274DE-676A-4376-BDA0-27FA7DCE5B47}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.8331263",
+      "DurationMax": "0.9907598",
+      "MediaRefs": [
+       {
+        "Id": "398777468"
+       }
+      ],
       "ActionSetSwitch": [
        {
         "GroupId": "2593986681",
@@ -624,10 +641,14 @@
       "Name": "Switch_Shotgun",
       "ObjectPath": "\\Events\\Weapons\\SwitchEvents\\Switch_Shotgun",
       "GUID": "{A07BC859-88ED-41FB-B87F-6BEEA79A3A53}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.5940115",
+      "DurationMax": "0.7064028",
+      "MediaRefs": [
+       {
+        "Id": "195799463"
+       }
+      ],
       "ActionSetSwitch": [
        {
         "GroupId": "2593986681",
@@ -643,10 +664,14 @@
       "Name": "Switch_Sniper",
       "ObjectPath": "\\Events\\Weapons\\SwitchEvents\\Switch_Sniper",
       "GUID": "{27911362-A139-451F-B8ED-D3D781E2CFB3}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.6292495",
+      "DurationMax": "0.74830806",
+      "MediaRefs": [
+       {
+        "Id": "644668777"
+       }
+      ],
       "ActionSetSwitch": [
        {
         "GroupId": "2593986681",
@@ -769,6 +794,6 @@
     ]
    }
   ],
-  "FileHash": "{373262D2-000C-0526-AB69-73A626EE3BAC}"
+  "FileHash": "{E88AC060-8139-EDB2-6459-A831802B2D83}"
  }
 }
