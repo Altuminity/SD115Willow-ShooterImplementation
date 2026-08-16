@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{57EB7956-C659-478D-9531-E15E18577C11}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Interactables" ID="{57EB7956-C659-478D-9531-E15E18577C11}" PersistMode="Standalone"/>
+		<WorkUnit Name="Interactables" ID="{57EB7956-C659-478D-9531-E15E18577C11}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="TargetHit" ID="{033C7797-1604-4F74-9F50-3F93FDBE16F0}">
+					<ChildrenList>
+						<Action Name="" ID="{DFCD58E8-EA54-4D88-94DA-6E74EF0B62DB}" ShortID="279496645">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RND_targetHit" ID="{43CC546A-0F77-43DF-B05E-84BB8431CD42}" WorkUnitID="{031B77DA-1CA0-41EB-8293-94E0195B9EA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

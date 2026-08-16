@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
     "Language": "SFX",
-    "Hash": "{883B7E3A-44A4-E56D-7E2C-1D171DF41C79}",
+    "Hash": "{6782DB4F-F6E7-FDDC-0D5A-331BD1456454}",
     "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -48,6 +48,14 @@
       "CachePath": "38/{38757C8B-B7BE-6266-C9A1-507D70F37D63}.wem"
      },
      {
+      "Id": "119877578",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TargetHit_3.wav",
+      "CachePath": "AE/{AE74DACD-89C2-C519-7B6C-63AE66CE9230}.wem"
+     },
+     {
       "Id": "147526480",
       "Language": "SFX",
       "Streaming": "false",
@@ -62,6 +70,14 @@
       "Location": "Memory",
       "ShortName": "TrumpetEnd.wav",
       "CachePath": "B0/{B04495C5-3F03-BDFD-5868-F9363C899B96}.wem"
+     },
+     {
+      "Id": "171313435",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "24 - Explosion Short.wav",
+      "CachePath": "34/{3485E55F-8725-230C-9DB7-F6C853E24294}.wem"
      },
      {
       "Id": "184113974",
@@ -110,6 +126,14 @@
       "Location": "Memory",
       "ShortName": "DrumsEnd.wav",
       "CachePath": "FC/{FC8EEF24-C362-27B0-B939-262A2FF186AC}.wem"
+     },
+     {
+      "Id": "294174945",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TargetHit_1.wav",
+      "CachePath": "44/{441840B9-6105-7E23-A794-989C0ACBA5E8}.wem"
      },
      {
       "Id": "371853762",
@@ -206,6 +230,14 @@
       "Location": "Memory",
       "ShortName": "SniperShot_4.wav",
       "CachePath": "62/{62CADEEF-64BE-40A7-F979-D4BC7E25D53F}.wem"
+     },
+     {
+      "Id": "831773710",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TargetHit_2.wav",
+      "CachePath": "8C/{8CB1BDA0-1EAB-214F-2E92-4A4752B40BAA}.wem"
      },
      {
       "Id": "854661924",
@@ -478,6 +510,20 @@
       ]
      },
      {
+      "Id": "2310057666",
+      "Name": "grenadeExplosion",
+      "ObjectPath": "\\Events\\Weapons\\grenadeExplosion",
+      "GUID": "{F8C2B853-0D97-4B27-9588-D8F687D35D9B}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.4577572",
+      "DurationMax": "1.4577572",
+      "MediaRefs": [
+       {
+        "Id": "171313435"
+       }
+      ]
+     },
+     {
       "Id": "4264879856",
       "Name": "Play_Music_Playlist",
       "ObjectPath": "\\Events\\Music\\Play_Music_Playlist",
@@ -683,6 +729,26 @@
       ]
      },
      {
+      "Id": "3822001633",
+      "Name": "TargetHit",
+      "ObjectPath": "\\Events\\Interactables\\TargetHit",
+      "GUID": "{033C7797-1604-4F74-9F50-3F93FDBE16F0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5973333",
+      "DurationMax": "1.296",
+      "MediaRefs": [
+       {
+        "Id": "119877578"
+       },
+       {
+        "Id": "294174945"
+       },
+       {
+        "Id": "831773710"
+       }
+      ]
+     },
+     {
       "Id": "4283052285",
       "Name": "TestTone",
       "ObjectPath": "\\Events\\TestTone\\TestTone",
@@ -794,6 +860,6 @@
     ]
    }
   ],
-  "FileHash": "{E88AC060-8139-EDB2-6459-A831802B2D83}"
+  "FileHash": "{D65B8A5C-7AFA-07FA-16D9-F0B357D9F127}"
  }
 }

@@ -124,6 +124,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="grenadeExplosion" ID="{F8C2B853-0D97-4B27-9588-D8F687D35D9B}">
+					<ChildrenList>
+						<Action Name="" ID="{97221FA9-E7D3-42E3-9856-97A967CAAC22}" ShortID="398151939">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="grenadeExplosion" ID="{9971C77F-82B2-4AC5-9CEF-C814810B51E3}" WorkUnitID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

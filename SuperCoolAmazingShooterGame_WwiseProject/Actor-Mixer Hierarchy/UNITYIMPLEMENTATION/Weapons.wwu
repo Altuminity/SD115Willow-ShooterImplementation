@@ -462,9 +462,28 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="24 - Explosion Short" ID="{A6A913B2-94C3-4F05-B6A8-F0CDBC3E415E}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.0588921273272"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.45775727900658"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>24 - Explosion Short.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="171313435"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="24 - Explosion Short" ID="{A6A913B2-94C3-4F05-B6A8-F0CDBC3E415E}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 						<Sound Name="genericBulletImpact" ID="{116FE0B7-737B-45C2-BB46-8ADFD5DA7030}" ShortID="576616974">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
