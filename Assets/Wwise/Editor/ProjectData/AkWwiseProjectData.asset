@@ -120,8 +120,42 @@ MonoBehaviour:
     ParentPath: Events\Interactables
     guid: 5679eb5759c68d479531e15e18577c11
     GuidInternal: 
-    m_lastTime: -8584147625090933313
+    m_lastTime: -8584146515664783366
     List:
+    - name: CowTargetBreak
+      guid: edc5201269b1604b992e9c432bdf55c4
+      id: 1319191442
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Interactables
+        ObjectType: 12
+        guid: 5679eb5759c68d479531e15e18577c11
+      - ElementName: CowTargetBreak
+        ObjectType: 3
+        guid: edc5201269b1604b992e9c432bdf55c4
+      Path: Events\Interactables\CowTargetBreak
+      maxAttenuation: 20
+      maxDuration: 1.296
+      minDuration: 1.1757743
+    - name: CowTargetSpawn
+      guid: 0ca1ff7ab0adc0469bfc02f2bfa3854f
+      id: 3945810658
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Interactables
+        ObjectType: 12
+        guid: 5679eb5759c68d479531e15e18577c11
+      - ElementName: CowTargetSpawn
+        ObjectType: 3
+        guid: 0ca1ff7ab0adc0469bfc02f2bfa3854f
+      Path: Events\Interactables\CowTargetSpawn
+      maxAttenuation: 20
+      maxDuration: 1.7070036
+      minDuration: 1.7070036
     - name: TargetHit
       guid: 97773c030416744f9f503f93fdbe16f0
       id: 3822001633
@@ -136,9 +170,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 97773c030416744f9f503f93fdbe16f0
       Path: Events\Interactables\TargetHit
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: 1.296
       minDuration: 0.5973333
+    - name: TargetSpawn
+      guid: 7c24df79f68c6c40a3ad706c50bd9016
+      id: 2341031379
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Interactables
+        ObjectType: 12
+        guid: 5679eb5759c68d479531e15e18577c11
+      - ElementName: TargetSpawn
+        ObjectType: 3
+        guid: 7c24df79f68c6c40a3ad706c50bd9016
+      Path: Events\Interactables\TargetSpawn
+      maxAttenuation: 20
+      maxDuration: 1.6822412
+      minDuration: 1.0143077
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -310,7 +361,7 @@ MonoBehaviour:
     ParentPath: Events\Weapons
     guid: 18139fcd9b575444bd39280c8b31656b
     GuidInternal: 
-    m_lastTime: -8584147624840616278
+    m_lastTime: -8584146664567909465
     List:
     - name: bulletImpactEvent
       guid: 366860a5ba13ff4bb72289fda8edae48
@@ -326,9 +377,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 366860a5ba13ff4bb72289fda8edae48
       Path: Events\Weapons\bulletImpactEvent
-      maxAttenuation: 0
-      maxDuration: 0.7541308
-      minDuration: 0.59855396
+      maxAttenuation: 20
+      maxDuration: 0.7421896
+      minDuration: 0.5890763
     - name: genericFireEvent
       guid: 48d69669b636bd4d825a77f1ddb64425
       id: 2987776788
@@ -735,7 +786,7 @@ MonoBehaviour:
     m_lastTime: -8584147654525551361
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000080000000a0000000c0000000e0000001000000011000000150000001d0000001f0000005e000000600000006a000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000a0000000c0000000e0000001000000011000000150000001b0000001d0000001f0000005e000000600000006a000000cb000000cd000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

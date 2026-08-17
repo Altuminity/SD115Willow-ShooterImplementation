@@ -7,9 +7,13 @@ public class BasicTarget : Target
     {
         scoreValue = 25;
     }
+
+    public override void Start()
+    {
+        base.Start();
+    }
     public override void DestroyTarget()
     {
-        AddScore(scoreValue);
-        Destroy(gameObject);
+        base.DestroyTarget();
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2775888078836954078}
   - component: {fileID: 7193032984286110676}
   - component: {fileID: 8528859607758927620}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collectible_FireRate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 7713983634806822207}
   - component: {fileID: 8945504117298997428}
   - component: {fileID: 8643905104181431689}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FireRateTransformReset
   m_TagString: Untagged
   m_Icon: {fileID: 0}

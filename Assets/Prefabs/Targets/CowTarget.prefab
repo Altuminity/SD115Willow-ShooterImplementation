@@ -132,6 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0df59a41bb76134a8aeb8b5e82d7cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetDestroySound: {fileID: 9112643137422247525, guid: cee18ed4bf7de384abaed635554bac5a, type: 3}
+  targetSpawn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 704c50055faec394892d7bb3d2abb36c, type: 2}
 --- !u!65 &8171580714514585511
 BoxCollider:
   m_ObjectHideFlags: 0

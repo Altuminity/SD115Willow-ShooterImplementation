@@ -21,7 +21,10 @@ public class WeaponSystem : MonoBehaviour
 
     [Header("Sniper Settings")]
     public float sniperRange = 200f;
+    public int sniperDamage = 50;
     public LayerMask targetLayer;
+    public LayerMask ignorePlayer;
+    public LayerMask enemyLayer;
 
     [Header("Shotgun Settings")]
     public int shotgunPellets = 8;
@@ -146,13 +149,25 @@ public class WeaponSystem : MonoBehaviour
 
     void FireSniper()
     {
+        if (sniperHitObject != null && Physics.Raycast(firePoint.position, firePoint.forward, out RaycastHit soundHit, sniperRange, ~ignorePlayer))
+        {
+            Vector3 hitPosition = soundHit.point;
+            Instantiate(sniperHitObject, hitPosition, Quaternion.identity); //doesnt work how i want it to??????? when the hit location get too far away then it just, starts playing closer to where i am???
+        }
+            
+
         if (Physics.Raycast(firePoint.position, firePoint.forward, out RaycastHit hit, sniperRange, targetLayer))
         {
             Target target = hit.collider.GetComponent<Target>();
             if (target != null)
                 target.DestroyTarget();
+        }
 
-            Instantiate(sniperHitObject, hit.transform.position, Quaternion.identity);
+        if (Physics.Raycast(firePoint.position, firePoint.forward, out RaycastHit enemyHit, sniperRange, enemyLayer))
+        {
+            Health health = enemyHit.collider.GetComponent<Health>();
+            if (health != null)
+                health.TakeDamage(sniperDamage);
         }
     }
 

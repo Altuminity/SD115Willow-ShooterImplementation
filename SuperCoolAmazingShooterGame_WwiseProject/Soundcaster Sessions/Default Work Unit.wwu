@@ -23,7 +23,7 @@
 						<CurrentStateRef Name="Menu" ID="{088F5439-D556-40F6-A113-29B0B4A594F1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Paintball" ID="{8DC9E72A-901E-4613-918A-CF152574CC08}"/>
+						<CurrentSwitchRef Name="Grenade" ID="{BFE6A38E-07A9-466C-8F51-4774C819E152}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

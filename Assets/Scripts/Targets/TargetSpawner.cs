@@ -16,6 +16,8 @@ public class TargetSpawner : MonoBehaviour
     public Collider spawnBounds;
     public float spawnHeight = 1.5f;
 
+    public GameObject player;
+
     void Update()
     {
         if (GameManager.Instance != null && !GameManager.Instance.IsGameActive) return;
@@ -39,6 +41,20 @@ public class TargetSpawner : MonoBehaviour
             Random.Range(b.min.z, b.max.z)
         );
 
-        Instantiate(prefab, pos, Quaternion.identity);
+        if (player != null)
+        {
+            Vector3 direction = player.transform.position - pos;
+            Vector3 yNormalizeEuler = new Vector3(0f, 1f, 0f);
+
+            Quaternion lookDirection = Quaternion.LookRotation(direction);
+            Quaternion yNormalOffset = Quaternion.Euler(yNormalizeEuler);
+
+            Quaternion finalLookDirection = lookDirection * yNormalOffset;
+
+
+            Instantiate(prefab, pos, finalLookDirection);
+        }
+        else
+            Instantiate(prefab, pos, Quaternion.identity);
     }
 }

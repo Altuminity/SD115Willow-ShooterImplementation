@@ -39,38 +39,41 @@ public class PowerUpCollectible : MonoBehaviour, ICollectible
 
     public void OnTriggerEnter(Collider other)
     {
-        switch (powerType)
+        if (other.gameObject.CompareTag("Player"))
         {
-            case PowerUpType.HealthUp:
-                {
-                    Health health = other.GetComponent<Health>();
-
-                    if (health != null)
+            switch (powerType)
+            {
+                case PowerUpType.HealthUp:
                     {
-                        health.Heal(healingAmount);
+                        Health health = other.GetComponent<Health>();
+
+                        if (health != null)
+                        {
+                            health.Heal(healingAmount);
+                            break;
+                        }
                         break;
                     }
-                    break;
-                }
-            case PowerUpType.FireRateUp:
-                {
-                    WeaponSystem fireRate = other.GetComponent<WeaponSystem>();
-                    if (fireRate == null) fireRate = other.GetComponentInParent<WeaponSystem>();
-
-                    if (fireRate != null)
+                case PowerUpType.FireRateUp:
                     {
-                        fireRate.SetFireRate(fireRateUpAmount, perkDuration);
+                        WeaponSystem fireRate = other.GetComponent<WeaponSystem>();
+                        if (fireRate == null) fireRate = other.GetComponentInParent<WeaponSystem>();
+
+                        if (fireRate != null)
+                        {
+                            fireRate.SetFireRate(fireRateUpAmount, perkDuration);
+                            break;
+                        }
                         break;
                     }
-                    break;
-                }
-            case PowerUpType.SpeedUp:
-                {
-                    break;
-                }
+                case PowerUpType.SpeedUp:
+                    {
+                        break;
+                    }
+            }
+
+            Destroy(gameObject);
         }
-
-        Destroy(gameObject);
     }
 
     public void SpeedUp(float speedMult, float duration)

@@ -7,9 +7,12 @@ public class HighPickTarget : Target
         scoreValue = 100;
         lifetime = 15f;
     }
+    public override void Start()
+    {
+        base.Start();
+    }
     public override void DestroyTarget()
     {
-        AddScore(scoreValue);
-        Destroy(gameObject);
+        base.DestroyTarget();
     }
 }

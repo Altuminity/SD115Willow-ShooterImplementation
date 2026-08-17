@@ -14,6 +14,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="TargetSpawn" ID="{79DF247C-8CF6-406C-A3AD-706C50BD9016}">
+					<ChildrenList>
+						<Action Name="" ID="{1BEDF590-E7AC-4B3C-A6FB-2001B09B8015}" ShortID="745318150">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RND_targetSpawn" ID="{13A85A34-4D40-4E07-9F62-7DD6F78E18D3}" WorkUnitID="{031B77DA-1CA0-41EB-8293-94E0195B9EA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CowTargetSpawn" ID="{7AFFA10C-ADB0-46C0-9BFC-02F2BFA3854F}">
+					<ChildrenList>
+						<Action Name="" ID="{7B014159-2752-49FC-8BEE-6A83BC95CB52}" ShortID="759606556">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CowTargetSpawn" ID="{27DA13FD-92F2-4229-B4B5-83CAF694FAD1}" WorkUnitID="{031B77DA-1CA0-41EB-8293-94E0195B9EA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CowTargetBreak" ID="{1220C5ED-B169-4B60-992E-9C432BDF55C4}">
+					<ChildrenList>
+						<Action Name="" ID="{85215CAE-4EF9-4AEA-8BC0-F039AE670F5A}" ShortID="782476717">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CowTargetBreak" ID="{14BAE712-4962-4487-9DC8-FD5827C64F50}" WorkUnitID="{031B77DA-1CA0-41EB-8293-94E0195B9EA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

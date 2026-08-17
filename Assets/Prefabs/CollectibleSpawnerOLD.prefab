@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4566382031031217391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8227105267800997044}
+  - component: {fileID: 3386646188526020903}
+  m_Layer: 0
+  m_Name: CollectibleSpawnerOLD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8227105267800997044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4566382031031217391}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.9432483, y: 2.5699484, z: 2.1626503}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3386646188526020903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4566382031031217391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 714d7d1f53ec4e1489d1431bf001571d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - prefab: {fileID: 7007925998293388688, guid: a3a364a30b9d7ce408695a3488535526, type: 3}
+    minSpawnInterval: 1
+    maxSpawnInterval: 4
+    nextSpawnTime: 0
+  - prefab: {fileID: 9222538972398615827, guid: 416f18b7cc165a54181afa25547732be, type: 3}
+    minSpawnInterval: 1
+    maxSpawnInterval: 4
+    nextSpawnTime: 0
+  - prefab: {fileID: 3640204855685715809, guid: a29b76135e5ef854a937e7ec47479770, type: 3}
+    minSpawnInterval: 1
+    maxSpawnInterval: 4
+    nextSpawnTime: 0
+  - prefab: {fileID: 2618750001663455757, guid: 9cffa2375c4e50e45a8400f8d9fa7cf0, type: 3}
+    minSpawnInterval: 1
+    maxSpawnInterval: 4
+    nextSpawnTime: 0
+  - prefab: {fileID: 553919207547970462, guid: b2babd12dbabb3e46b810a08bc3fc416, type: 3}
+    minSpawnInterval: 1
+    maxSpawnInterval: 4
+    nextSpawnTime: 0
+  spawnBounds: {fileID: 0}
+  spawnHeight: 1.5

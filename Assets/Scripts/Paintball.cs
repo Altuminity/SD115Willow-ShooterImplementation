@@ -7,6 +7,7 @@ public class Paintball : MonoBehaviour
 
     private Vector3 previousPosition;
 
+    [SerializeField] protected GameObject bulletImpactObject;
 
     void Start()
     {
@@ -22,6 +23,9 @@ public class Paintball : MonoBehaviour
         Health health = collision.gameObject.GetComponent<Health>();
         if (health != null)
             health.TakeDamage(damage);
+
+        if(bulletImpactObject != null)
+            Instantiate(bulletImpactObject, transform.position, Quaternion.identity);
 
         Destroy(gameObject);
     }

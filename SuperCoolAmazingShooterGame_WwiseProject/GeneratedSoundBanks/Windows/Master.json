@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
     "Language": "SFX",
-    "Hash": "{6782DB4F-F6E7-FDDC-0D5A-331BD1456454}",
+    "Hash": "{87849306-2372-43F3-788E-5D67526ABA61}",
     "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "GrenadeSwitch_4.wav",
       "CachePath": "36/{362DC318-B585-660D-14AA-B49AC8C70E3A}.wem"
+     },
+     {
+      "Id": "54934476",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "woodslide2.wav",
+      "CachePath": "13/{13488774-ABC0-C67D-46E6-F8468C5B53E4}.wem"
      },
      {
       "Id": "59402383",
@@ -56,6 +64,14 @@
       "CachePath": "AE/{AE74DACD-89C2-C519-7B6C-63AE66CE9230}.wem"
      },
      {
+      "Id": "120738465",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "woodslide6.wav",
+      "CachePath": "B0/{B0C49057-613B-E740-C32D-09953B9C6BC8}.wem"
+     },
+     {
       "Id": "147526480",
       "Language": "SFX",
       "Streaming": "false",
@@ -72,12 +88,20 @@
       "CachePath": "B0/{B04495C5-3F03-BDFD-5868-F9363C899B96}.wem"
      },
      {
+      "Id": "167051183",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "woodslide.wav",
+      "CachePath": "FF/{FF1FCBBD-DCB8-E929-2FF7-C1FEB01B0205}.wem"
+     },
+     {
       "Id": "171313435",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "24 - Explosion Short.wav",
-      "CachePath": "34/{3485E55F-8725-230C-9DB7-F6C853E24294}.wem"
+      "CachePath": "53/{53558E45-4674-2DFB-F64E-F534C95776E0}.wem"
      },
      {
       "Id": "184113974",
@@ -117,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "genericBulletImpact.wav",
-      "CachePath": "5F/{5F448038-2AD4-48B3-8D07-DA9B9EDD93DB}.wem"
+      "CachePath": "EC/{EC543148-3FFA-CFF5-A6C9-97378264D22F}.wem"
      },
      {
       "Id": "292184215",
@@ -160,6 +184,14 @@
       "CachePath": "A2/{A2CE899A-98A0-EBF4-E160-012DCB477CB2}.wem"
      },
      {
+      "Id": "449917891",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "woodslide3.wav",
+      "CachePath": "A0/{A0C15008-00A4-A261-C2CA-F87FE9F9B77F}.wem"
+     },
+     {
       "Id": "505764327",
       "Language": "SFX",
       "Streaming": "false",
@@ -189,7 +221,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PistolShot_01.wav",
-      "CachePath": "49/{49F6F04E-CC08-23EA-A82B-A28627CDCC06}.wem"
+      "CachePath": "1F/{1FAD2EC3-E80B-858B-E25E-8BAAE6399020}.wem"
      },
      {
       "Id": "638456630",
@@ -200,12 +232,36 @@
       "CachePath": "8A/{8A1C32F7-F39A-463C-A12E-B34B3855156A}.wem"
      },
      {
+      "Id": "643095234",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MooB.wav",
+      "CachePath": "7E/{7E5CD5E9-6AC1-6D0A-2038-5E19082A9414}.wem"
+     },
+     {
       "Id": "644668777",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SniperSwitch.wav",
       "CachePath": "EC/{ECDE545B-F6E9-9C22-E269-5AE0F809190C}.wem"
+     },
+     {
+      "Id": "688455040",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "woodslide5.wav",
+      "CachePath": "66/{66C1C3E5-EB72-91F8-3757-B1BFF423A4E1}.wem"
+     },
+     {
+      "Id": "741463803",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MooA.wav",
+      "CachePath": "F0/{F07087FD-F41C-64E5-2808-A103648418D4}.wem"
      },
      {
       "Id": "769219218",
@@ -330,12 +386,52 @@
       "Name": "bulletImpactEvent",
       "ObjectPath": "\\Events\\Weapons\\bulletImpactEvent",
       "GUID": "{A5606836-13BA-4BFF-B722-89FDA8EDAE48}",
+      "MaxAttenuation": "20",
       "DurationType": "OneShot",
-      "DurationMin": "0.59855396",
-      "DurationMax": "0.7541308",
+      "DurationMin": "0.5890763",
+      "DurationMax": "0.7421896",
       "MediaRefs": [
        {
         "Id": "281392890"
+       }
+      ]
+     },
+     {
+      "Id": "1319191442",
+      "Name": "CowTargetBreak",
+      "ObjectPath": "\\Events\\Interactables\\CowTargetBreak",
+      "GUID": "{1220C5ED-B169-4B60-992E-9C432BDF55C4}",
+      "MaxAttenuation": "20",
+      "DurationType": "OneShot",
+      "DurationMin": "1.1757743",
+      "DurationMax": "1.296",
+      "MediaRefs": [
+       {
+        "Id": "119877578"
+       },
+       {
+        "Id": "294174945"
+       },
+       {
+        "Id": "643095234"
+       },
+       {
+        "Id": "831773710"
+       }
+      ]
+     },
+     {
+      "Id": "3945810658",
+      "Name": "CowTargetSpawn",
+      "ObjectPath": "\\Events\\Interactables\\CowTargetSpawn",
+      "GUID": "{7AFFA10C-ADB0-46C0-9BFC-02F2BFA3854F}",
+      "MaxAttenuation": "20",
+      "DurationType": "OneShot",
+      "DurationMin": "1.7070036",
+      "DurationMax": "1.7070036",
+      "MediaRefs": [
+       {
+        "Id": "741463803"
        }
       ]
      },
@@ -733,6 +829,7 @@
       "Name": "TargetHit",
       "ObjectPath": "\\Events\\Interactables\\TargetHit",
       "GUID": "{033C7797-1604-4F74-9F50-3F93FDBE16F0}",
+      "MaxAttenuation": "20",
       "DurationType": "OneShot",
       "DurationMin": "0.5973333",
       "DurationMax": "1.296",
@@ -745,6 +842,33 @@
        },
        {
         "Id": "831773710"
+       }
+      ]
+     },
+     {
+      "Id": "2341031379",
+      "Name": "TargetSpawn",
+      "ObjectPath": "\\Events\\Interactables\\TargetSpawn",
+      "GUID": "{79DF247C-8CF6-406C-A3AD-706C50BD9016}",
+      "MaxAttenuation": "20",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0143077",
+      "DurationMax": "1.6822412",
+      "MediaRefs": [
+       {
+        "Id": "54934476"
+       },
+       {
+        "Id": "120738465"
+       },
+       {
+        "Id": "167051183"
+       },
+       {
+        "Id": "449917891"
+       },
+       {
+        "Id": "688455040"
        }
       ]
      },
@@ -860,6 +984,6 @@
     ]
    }
   ],
-  "FileHash": "{D65B8A5C-7AFA-07FA-16D9-F0B357D9F127}"
+  "FileHash": "{DF9351B7-6FF1-FC18-40AF-6D44EF65A863}"
  }
 }

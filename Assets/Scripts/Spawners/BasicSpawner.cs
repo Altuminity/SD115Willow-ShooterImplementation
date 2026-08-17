@@ -6,6 +6,7 @@ public class BasicSpawner : MonoBehaviour
     public GameObject spawnedPrefab;
     public float minSpawnInterval = 10f;
     public float maxSpawnInterval = 20f;
+    public float spawnHeight = 0.03f;
     [HideInInspector] public float nextSpawnTime;
 
     [SerializeField] private GameObject _currentSpawned;
@@ -50,7 +51,7 @@ public class BasicSpawner : MonoBehaviour
 
     void SpawnObject(GameObject prefab)
     {
-        Vector3 spawnLoc = new Vector3(transform.position.x, transform.position.y + 0.03f, transform.position.z);
+        Vector3 spawnLoc = new Vector3(transform.position.x, transform.position.y + spawnHeight, transform.position.z);
         Instantiate(prefab, spawnLoc, Quaternion.identity);
         isSpawned = true;
     }

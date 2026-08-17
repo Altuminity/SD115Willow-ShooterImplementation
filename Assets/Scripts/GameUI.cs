@@ -8,6 +8,8 @@ public class GameUI : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI weaponText;
+    public TextMeshProUGUI healthText;
+    public Slider healthBar;
 
     [Header("End Screen")]
     public GameObject endScreenPanel;
@@ -19,6 +21,7 @@ public class GameUI : MonoBehaviour
     public GameObject crosshair;
 
     WeaponSystem weaponSystem;
+    public Health playerHealth;
 
     void Start()
     {
@@ -42,11 +45,20 @@ public class GameUI : MonoBehaviour
     {
         if (weaponSystem != null && weaponText != null)
             weaponText.text = weaponSystem.CurrentBulletType.ToString();
+
+        if (playerHealth != null && healthBar != null && healthText != null)
+            UpdateHealth();
     }
 
     void UpdateScore(int score)
     {
         scoreText.text = "Score: " + score;
+    }
+
+    public void UpdateHealth()
+    {
+        healthText.text = $"{playerHealth.CurrentHealth}";
+        healthBar.value = playerHealth.CurrentHealth;
     }
 
     void UpdateTimer(float time)

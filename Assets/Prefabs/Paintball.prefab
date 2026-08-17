@@ -151,4 +151,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifetime: 5
   damage: 20
-  paintballHitSound: {fileID: 2946940913363166030, guid: d6464124e26e6a242948a04de1adb485, type: 3}
+  bulletImpactObject: {fileID: 6596938831954838238, guid: d9fb57ef55dd51349875af941f8d4d3f, type: 3}

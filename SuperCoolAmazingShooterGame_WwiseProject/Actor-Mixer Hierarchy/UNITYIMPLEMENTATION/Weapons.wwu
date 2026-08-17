@@ -86,6 +86,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="PistolShot_01" ID="{88EE5E50-9D08-4302-B146-14A76D9E937A}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.013284654757365"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.013284654757365"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>PistolShot_01.wav</AudioFile>
 													<MediaIDList>
@@ -499,6 +504,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Targets" ID="{054AF837-7BD8-4323-AEC9-4BE6844A0C2E}" WorkUnitID="{728354F8-7767-4118-88B9-27386F1B6AA1}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
 								</Reference>
@@ -508,6 +516,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="genericBulletImpact" ID="{14A29D00-4D6B-4B3F-BAF8-07B2BBE59F76}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0106383724712135"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>genericBulletImpact.wav</AudioFile>
 									<MediaIDList>

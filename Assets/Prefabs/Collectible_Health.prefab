@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6197269709838215205}
   - component: {fileID: 7612561973889475499}
   - component: {fileID: 6583793288826998677}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collectible_Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 149105060698611290}
   - component: {fileID: 4914792557072347978}
   - component: {fileID: 8235849016460826774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HealthTransformReset
   m_TagString: Untagged
   m_Icon: {fileID: 0}

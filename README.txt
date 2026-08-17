@@ -1,3 +1,10 @@
+26/08/17
+- added blue collectible spawners that spawn a shotgun, sniper, grenade launcher, or a health pack continuously
+- collectible spawner now spawns just the fire rate increase upgrade
+- added more raycasthit cases to the sniper in the weaponsystem script
+- added a health ui component
+- reintroduced the target spawner, for now just spawns the targets facing the player for a (sort of) weeping angel effect anywhere in the spawn bounds (may change in the future, not a priority, its a FEATURE of the level :nodding:
+
 26/08/13
 -added multiple sounds to the wwise project (CHECK SOUNDREADME)
 -changed the projectiles that the enemy shoots to be enemy paintballs due to a bug with having all the diff paintball logic on one paintball caused the player to shoot themselves many times when running in the direction they shot in. player paintballs now shoot collision based detection, and enemies now shoot raycast based detection
@@ -11,7 +18,7 @@ It also has callbacks that pulse the lights on the beat, and change the color on
 
 26/07/29 PM
 -added placeholder stuff in wwise project (empty sounds and hierarchies and set up some game syncs)
--added AKwiseEvents in new generic SoundAndDestory.cs, as well as active grenade, paintball, and weapon system.
+- XX added AKwiseEvents in new generic SoundAndDestory.cs, as well as active grenade, paintball, and weapon system. [THIS IS DEPRECATED SOUND AND DESTROY WAS NOT WORKING AS INTENDED NEW VERSION OF THIS IS THE OnDestroyHit/DoSound stuff] XX
 
 26/07/29
 -imported a modeled and rigged sentry turret (created by yours truly ;3) inspired by the tf2 level 1 turret
@@ -21,7 +28,7 @@ It also has callbacks that pulse the lights on the beat, and change the color on
 
 26/07/22
 missed a readme pull from other PC ughhhhhhhhhhhhhh cant be bothered to remember specifically what was added
--mostly added new targets and implemented target classes (if you want to be nitpicky everything that was altered IS in the GitHub)
+-mostly added new targets and implemented target classes
 
 26/07/19
 -added a weapon switch function to visually swap out weapons when the player picks up a collectible
