@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5B82C2AB-0658-434A-809F-29B1CD263BAC}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Ambience" ID="{5B82C2AB-0658-434A-809F-29B1CD263BAC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Ambience" ID="{4DFF2E96-FE29-4E7E-B9DA-7BA2151D5C90}">
+					<ChildrenList>
+						<Action Name="" ID="{D42C170E-1F0C-4BC3-A030-E5A2EB91E430}" ShortID="1063822631">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BL_Ambience" ID="{1DFBE445-3B52-40B4-8CFA-0A03B05A84CD}" WorkUnitID="{F7C85080-E606-4FF2-AA0C-D9F89AF0C15B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Ambience" ID="{4A640624-7361-475A-AA5E-C2C6C7C157C7}">
+					<ChildrenList>
+						<Action Name="" ID="{DD7F38F6-9D68-4A4C-8FE4-C4434AC64A70}" ShortID="883468764">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BL_Ambience" ID="{1DFBE445-3B52-40B4-8CFA-0A03B05A84CD}" WorkUnitID="{F7C85080-E606-4FF2-AA0C-D9F89AF0C15B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,3 +1,7 @@
+26/08/18
+- added a dumb script to add score when the sentry is destroyed (there are probably an infitismal amount of ways for this to be implemented better)
+- modified the music script to include ambience since they start and stop at the same points anyway.
+
 26/08/17
 - added blue collectible spawners that spawn a shotgun, sniper, grenade launcher, or a health pack continuously
 - collectible spawner now spawns just the fire rate increase upgrade

@@ -9,6 +9,40 @@
 							<ObjectRef Name="System" ID="{5137DB50-EB0D-432D-A483-0693D63C93CA}" WorkUnitID="{6FD50314-9875-4586-BB1C-7C121ABD3623}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Ambience" ID="{1646E4A0-FBB5-4B07-BF6F-6E131B64F086}">
+							<PropertyList>
+								<Property Name="HdrRatio" Type="Real64">
+									<ValueList>
+										<Value>15</Value>
+									</ValueList>
+								</Property>
+								<Property Name="HdrReleaseTime" Type="Real64">
+									<ValueList>
+										<Value>1.3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="SFX" ID="{FBDCF6C1-9C9B-4314-961A-58066DABFCDC}">
+							<ChildrenList>
+								<Bus Name="ShotExplosion" ID="{F70273B6-2F82-4713-8201-3F2ABEED39C2}">
+									<PropertyList>
+										<Property Name="HdrReleaseTime" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList/>
+								</Bus>
+								<Bus Name="Foley" ID="{24EC74AB-07C0-4851-9A2C-67D9DEDD7034}"/>
+								<Bus Name="Targets" ID="{3AED2050-85DD-49E3-81B4-C821483AE2F5}"/>
+								<Bus Name="UI" ID="{59CAAD0A-45B8-4E63-93BD-D9BB6F5D7332}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Music" ID="{C5C0EBE0-7CC2-4791-94A9-1AC7E6C94CD1}"/>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

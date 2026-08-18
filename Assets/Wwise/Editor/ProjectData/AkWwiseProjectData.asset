@@ -96,6 +96,53 @@ MonoBehaviour:
         guid: 3c3a7875cceb8d448e6ee9026eaa699e
       Path: SoundBanks\MasterSoundbankUnit\Master
   EventWwu:
+  - PhysicalPath: Events\Ambience.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Ambience
+      ObjectType: 12
+      guid: abc2825b58064a43809f29b1cd263bac
+    ParentPath: Events\Ambience
+    guid: abc2825b58064a43809f29b1cd263bac
+    GuidInternal: 
+    m_lastTime: -8584145687201192150
+    List:
+    - name: Play_Ambience
+      guid: 962eff4d29fe7e4eb9da7ba2151d5c90
+      id: 278617630
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambience
+        ObjectType: 12
+        guid: abc2825b58064a43809f29b1cd263bac
+      - ElementName: Play_Ambience
+        ObjectType: 3
+        guid: 962eff4d29fe7e4eb9da7ba2151d5c90
+      Path: Events\Ambience\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Ambience
+      guid: 2406644a61735a47aa5ec2c6c7c157c7
+      id: 2477713992
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambience
+        ObjectType: 12
+        guid: abc2825b58064a43809f29b1cd263bac
+      - ElementName: Stop_Ambience
+        ObjectType: 3
+        guid: 2406644a61735a47aa5ec2c6c7c157c7
+      Path: Events\Ambience\Stop_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -201,7 +248,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 93e27300337a0f4eb61f8a4f59872e5d
     GuidInternal: 
-    m_lastTime: -8584147654533598480
+    m_lastTime: -8584145687874791595
     List:
     - name: Play_Music_Playlist
       guid: a985d0591b14a041aded861fbff60c16
@@ -217,6 +264,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: a985d0591b14a041aded861fbff60c16
       Path: Events\Music\Play_Music_Playlist
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music_Playlist
+      guid: a591f61dbe2854429b158037156da134
+      id: 1613706326
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 93e27300337a0f4eb61f8a4f59872e5d
+      - ElementName: Stop_Music_Playlist
+        ObjectType: 3
+        guid: a591f61dbe2854429b158037156da134
+      Path: Events\Music\Stop_Music_Playlist
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

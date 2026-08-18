@@ -44,17 +44,10 @@ public class TargetSpawner : MonoBehaviour
         if (player != null)
         {
             Vector3 direction = player.transform.position - pos;
-            Vector3 yNormalizeEuler = new Vector3(0f, 1f, 0f);
-
             Quaternion lookDirection = Quaternion.LookRotation(direction);
-            Quaternion yNormalOffset = Quaternion.Euler(yNormalizeEuler);
-
-            Quaternion finalLookDirection = lookDirection * yNormalOffset;
-
-
-            Instantiate(prefab, pos, finalLookDirection);
+            Instantiate(prefab, pos, lookDirection);
         }
         else
-            Instantiate(prefab, pos, Quaternion.identity);
+            Instantiate(prefab, pos, Quaternion.identity); 
     }
 }

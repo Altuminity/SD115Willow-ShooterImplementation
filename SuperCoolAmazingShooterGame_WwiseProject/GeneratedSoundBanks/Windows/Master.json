@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
     "Language": "SFX",
-    "Hash": "{87849306-2372-43F3-788E-5D67526ABA61}",
+    "Hash": "{A0DC83D2-30FA-676C-F857-42A50E877351}",
     "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "woodslide2.wav",
-      "CachePath": "13/{13488774-ABC0-C67D-46E6-F8468C5B53E4}.wem"
+      "CachePath": "55/{55A54172-424E-6D5D-87B5-C464E605556B}.wem"
      },
      {
       "Id": "59402383",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "woodslide6.wav",
-      "CachePath": "B0/{B0C49057-613B-E740-C32D-09953B9C6BC8}.wem"
+      "CachePath": "51/{5183BB2A-F2F8-2A37-71A2-B2FDDCAA4EA0}.wem"
      },
      {
       "Id": "147526480",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "woodslide.wav",
-      "CachePath": "FF/{FF1FCBBD-DCB8-E929-2FF7-C1FEB01B0205}.wem"
+      "CachePath": "0D/{0DBB2606-F160-E4C6-E534-576FCB19C650}.wem"
      },
      {
       "Id": "171313435",
@@ -141,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "genericBulletImpact.wav",
-      "CachePath": "EC/{EC543148-3FFA-CFF5-A6C9-97378264D22F}.wem"
+      "CachePath": "76/{7651D746-AA15-48C4-1652-DA7142108BF1}.wem"
      },
      {
       "Id": "292184215",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "woodslide3.wav",
-      "CachePath": "A0/{A0C15008-00A4-A261-C2CA-F87FE9F9B77F}.wem"
+      "CachePath": "96/{966315EA-7F39-1D31-4E51-9580962AAF2D}.wem"
      },
      {
       "Id": "505764327",
@@ -221,7 +221,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PistolShot_01.wav",
-      "CachePath": "1F/{1FAD2EC3-E80B-858B-E25E-8BAAE6399020}.wem"
+      "CachePath": "2D/{2DE98D06-3E95-FA1B-9F3C-A7ADC8B90D27}.wem"
+     },
+     {
+      "Id": "581672167",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlaningMillAmbience.wav",
+      "CachePath": "46/{46F81E86-62CA-FEB5-2A39-8261DCACB21E}.wem"
      },
      {
       "Id": "638456630",
@@ -237,7 +245,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MooB.wav",
-      "CachePath": "7E/{7E5CD5E9-6AC1-6D0A-2038-5E19082A9414}.wem"
+      "CachePath": "7F/{7F41AAB6-8C40-E332-F6FA-796AA374E1DE}.wem"
      },
      {
       "Id": "644668777",
@@ -248,12 +256,20 @@
       "CachePath": "EC/{ECDE545B-F6E9-9C22-E269-5AE0F809190C}.wem"
      },
      {
+      "Id": "661390407",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SteelMillAmbience.wav",
+      "CachePath": "F6/{F6392CC8-A91A-75F6-0072-2B7C03DF5778}.wem"
+     },
+     {
       "Id": "688455040",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "woodslide5.wav",
-      "CachePath": "66/{66C1C3E5-EB72-91F8-3757-B1BFF423A4E1}.wem"
+      "CachePath": "AC/{AC1394A8-8BB7-E7EE-7E82-8E2AD94FA88F}.wem"
      },
      {
       "Id": "741463803",
@@ -261,7 +277,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MooA.wav",
-      "CachePath": "F0/{F07087FD-F41C-64E5-2808-A103648418D4}.wem"
+      "CachePath": "9E/{9E8B4528-6CF0-EC71-B07E-C6BAABE75A3C}.wem"
      },
      {
       "Id": "769219218",
@@ -620,6 +636,21 @@
       ]
      },
      {
+      "Id": "278617630",
+      "Name": "Play_Ambience",
+      "ObjectPath": "\\Events\\Ambience\\Play_Ambience",
+      "GUID": "{4DFF2E96-FE29-4E7E-B9DA-7BA2151D5C90}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "581672167"
+       },
+       {
+        "Id": "661390407"
+       }
+      ]
+     },
+     {
       "Id": "4264879856",
       "Name": "Play_Music_Playlist",
       "ObjectPath": "\\Events\\Music\\Play_Music_Playlist",
@@ -722,6 +753,26 @@
         "GUID": "{088F5439-D556-40F6-A113-29B0B4A594F1}"
        }
       ]
+     },
+     {
+      "Id": "2477713992",
+      "Name": "Stop_Ambience",
+      "ObjectPath": "\\Events\\Ambience\\Stop_Ambience",
+      "GUID": "{4A640624-7361-475A-AA5E-C2C6C7C157C7}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1613706326",
+      "Name": "Stop_Music_Playlist",
+      "ObjectPath": "\\Events\\Music\\Stop_Music_Playlist",
+      "GUID": "{1DF691A5-28BE-4254-9B15-8037156DA134}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "1405900730",
@@ -984,6 +1035,6 @@
     ]
    }
   ],
-  "FileHash": "{DF9351B7-6FF1-FC18-40AF-6D44EF65A863}"
+  "FileHash": "{B169D289-60C8-9E44-E39C-1A4F9ED120B3}"
  }
 }

@@ -1,3 +1,7 @@
+26/08/18
+- added ambience into the new modified musicambience script
+
+
 26/08/17
 - implemented target break events, and attached them to the DoSound script in the prefabs OnHitDestroy_CowTarget and _Target
 - implemented target spawn events on each target prefab

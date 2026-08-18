@@ -9,11 +9,14 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+							<ObjectRef Name="SFX" ID="{FBDCF6C1-9C9B-4314-961A-58066DABFCDC}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="SW_Fire" ID="{12F1DEE8-4674-4A0B-B384-956E115FD4F4}" ShortID="105023955">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
@@ -22,7 +25,7 @@
 									<ObjectRef Name="Paintball" ID="{8DC9E72A-901E-4613-918A-CF152574CC08}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+									<ObjectRef Name="ShotExplosion" ID="{F70273B6-2F82-4713-8201-3F2ABEED39C2}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="weaponFireSwitch" ID="{E27CF2DF-B82A-4B15-9360-DDCA0B2C7710}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
@@ -459,12 +462,17 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<Sound Name="grenadeExplosion" ID="{9971C77F-82B2-4AC5-9CEF-C814810B51E3}" ShortID="994504290">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D1399417-73B8-4B42-9027-FBD3B239FC8C}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+									<ObjectRef Name="ShotExplosion" ID="{F70273B6-2F82-4713-8201-3F2ABEED39C2}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -533,6 +541,7 @@
 						</Sound>
 						<SwitchContainer Name="SW_WeaponPickup" ID="{3AA8DA95-D416-4548-B93B-4DABA0AEAB1D}" ShortID="539412495">
 							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -546,6 +555,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -555,7 +569,7 @@
 									<ObjectRef Name="Paintball" ID="{8DC9E72A-901E-4613-918A-CF152574CC08}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+									<ObjectRef Name="Foley" ID="{24EC74AB-07C0-4851-9A2C-67D9DEDD7034}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="weaponFireSwitch" ID="{E27CF2DF-B82A-4B15-9360-DDCA0B2C7710}" WorkUnitID="{A822D840-E805-4B26-9AA0-86F37F70C67D}"/>

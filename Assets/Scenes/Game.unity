@@ -5104,6 +5104,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1576771988}
+        m_TargetAssemblyTypeName: MusicAmbienceManager, Assembly-CSharp
+        m_MethodName: StopSounds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1353243217
 GameObject:
   m_ObjectHideFlags: 0
@@ -5903,7 +5915,7 @@ GameObject:
   - component: {fileID: 1576771989}
   - component: {fileID: 1576771988}
   m_Layer: 0
-  m_Name: MusicManager
+  m_Name: MusicAmbManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5925,6 +5937,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d0a68678a70d59445b23b8c5c9a00438, type: 2}
+  stopMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 23ca822523d2e994f8345118ea3c4557, type: 2}
   playerSpeed:
     idInternal: 0
     valueGuidInternal: 
@@ -5937,8 +5953,17 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d6a80d4731bad5d49a40af0e3e777ca6, type: 2}
+  ambEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ea3cc69ae4cdb514e96658a90ad8123e, type: 2}
+  stopAmb:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 35c91a732a72dbf49b79256df5328628, type: 2}
   menuUI: {fileID: 1607786471}
   charCon: {fileID: 142604433}
+  isMusicPlaying: 0
   beatLights:
   - {fileID: 2037698591}
   - {fileID: 663070472}
