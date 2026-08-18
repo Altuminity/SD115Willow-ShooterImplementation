@@ -11,6 +11,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ambience" ID="{1646E4A0-FBB5-4B07-BF6F-6E131B64F086}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Drunkmolo" ID="{AB816E81-E50F-4F8B-AE86-1C52227B1992}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="BL_Ambience" ID="{1DFBE445-3B52-40B4-8CFA-0A03B05A84CD}" ShortID="252974911">

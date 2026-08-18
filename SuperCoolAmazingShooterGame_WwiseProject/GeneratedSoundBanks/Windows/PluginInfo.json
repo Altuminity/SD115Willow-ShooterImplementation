@@ -11,6 +11,13 @@
     "StaticLib": "AkToneSource"
    },
    {
+    "LibName": "Wwise RoomVerb",
+    "LibId": "7733251",
+    "Type": "Effect",
+    "DLL": "AkRoomVerb",
+    "StaticLib": "AkRoomVerbFX"
+   },
+   {
     "LibName": "System",
     "LibId": "11403271",
     "Type": "AudioDevice"
@@ -21,6 +28,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{14797CBC-74B2-9547-769E-6ED4D4A1948B}"
+  "FileHash": "{670B41CB-8E67-0660-E079-398215B65E9D}"
  }
 }

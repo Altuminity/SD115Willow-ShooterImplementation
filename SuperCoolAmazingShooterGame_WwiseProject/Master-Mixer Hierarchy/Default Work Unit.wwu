@@ -14,7 +14,7 @@
 							<PropertyList>
 								<Property Name="HdrRatio" Type="Real64">
 									<ValueList>
-										<Value>15</Value>
+										<Value>16</Value>
 									</ValueList>
 								</Property>
 								<Property Name="HdrReleaseTime" Type="Real64">
@@ -23,8 +23,35 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="STA_MenuGameplay" ID="{DC3D0DC9-6E56-4813-8613-12CF597553D5}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Menu" ID="{088F5439-D556-40F6-A113-29B0B4A594F1}"/>
+										<CustomState Name="" ID="{4C5BF57D-F69E-49A3-9318-50DF4DF63E61}" ShortID="1041931519">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-7"/>
+												<Property Name="Highpass" Type="int16" Value="58"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Gameplay" ID="{29433329-7C2C-4169-AB50-B5D5294B451D}"/>
+										<CustomState Name="" ID="{EC5ABBC4-6336-455C-9E8E-D920CBED46C0}" ShortID="491317259"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 						<Bus Name="SFX" ID="{FBDCF6C1-9C9B-4314-961A-58066DABFCDC}">
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomVerb" ID="{563304D8-583A-434B-AA46-72186180199A}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
 								<Bus Name="ShotExplosion" ID="{F70273B6-2F82-4713-8201-3F2ABEED39C2}">
 									<PropertyList>
@@ -38,10 +65,150 @@
 								</Bus>
 								<Bus Name="Foley" ID="{24EC74AB-07C0-4851-9A2C-67D9DEDD7034}"/>
 								<Bus Name="Targets" ID="{3AED2050-85DD-49E3-81B4-C821483AE2F5}"/>
-								<Bus Name="UI" ID="{59CAAD0A-45B8-4E63-93BD-D9BB6F5D7332}"/>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="STA_MenuGameplay" ID="{DC3D0DC9-6E56-4813-8613-12CF597553D5}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Menu" ID="{088F5439-D556-40F6-A113-29B0B4A594F1}"/>
+										<CustomState Name="" ID="{0EECC0F2-A5BA-44EB-9DAB-982AE3BAD0B2}" ShortID="672944878">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-15"/>
+												<Property Name="Lowpass" Type="int16" Value="55"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Gameplay" ID="{29433329-7C2C-4169-AB50-B5D5294B451D}"/>
+										<CustomState Name="" ID="{27CDC8E0-9C35-4399-BFD5-9AF6B1824AC9}" ShortID="840351185"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 						<Bus Name="Music" ID="{C5C0EBE0-7CC2-4791-94A9-1AC7E6C94CD1}"/>
+						<AuxBus Name="RoomVerb" ID="{563304D8-583A-434B-AA46-72186180199A}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{4B0C2EBF-5E75-4941-922C-4BEAC9FFD198}" ShortID="849394530">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<Bus Name="UI" ID="{59CAAD0A-45B8-4E63-93BD-D9BB6F5D7332}"/>
+						<AuxBus Name="Drunkmolo" ID="{AB816E81-E50F-4F8B-AE86-1C52227B1992}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="DrunkState" ID="{3E9E9565-CF6A-4B36-A7E8-487FBFAA5032}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Sober" ID="{CDF0F790-94E6-4E48-BB64-8758389BA89A}"/>
+										<CustomState Name="" ID="{2FC6CA40-B76D-4C67-920C-0A8CB41148AC}" ShortID="689052462">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Drunk" ID="{37567E70-3301-4FB3-9395-088E5363523B}"/>
+										<CustomState Name="" ID="{09A601A4-3DB9-4E60-95BF-5D5DB9C8C90C}" ShortID="511537111"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{3C6BB6CF-D0F1-4BD4-B072-3225153E8087}" ShortID="700209078">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{3B09A271-D9D4-4A4E-B545-F681E8313E5F}">
+															<Effect Name="Fast_LF_Tremolo (Custom)" ID="{33F77BC3-019C-41C0-B40C-42F06D98463E}" ShortID="168349082" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+																<PropertyList>
+																	<Property Name="ModFrequency" Type="Real32" Value="3.22"/>
+																	<Property Name="ModPWM" Type="Real32" Value="4"/>
+																	<Property Name="ModPhaseOffset" Type="Real32" Value="87"/>
+																	<Property Name="ModPhaseSpread" Type="Real32" Value="108"/>
+																	<Property Name="ModSmoothing" Type="Real32" Value="100"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+												<StateInfo>
+													<CustomStateList>
+														<CustomState>
+															<StateRef Name="Sober" ID="{CDF0F790-94E6-4E48-BB64-8758389BA89A}"/>
+															<CustomState Name="" ID="{49C174A4-7D29-4B55-80A6-57282AA70DCA}" ShortID="706167142"/>
+														</CustomState>
+														<CustomState>
+															<StateRef Name="Drunk" ID="{37567E70-3301-4FB3-9395-088E5363523B}"/>
+															<CustomState Name="" ID="{6BB3ED0F-BC54-49E9-A75C-C8DE47D38916}" ShortID="793229005"/>
+														</CustomState>
+													</CustomStateList>
+												</StateInfo>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{303F8421-6B9D-4C4B-998A-2C7D8E4AA639}" ShortID="697421726">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{7A0568D0-BE8B-4233-B3E8-200344DB7AE0}">
+															<Effect Name="Repeat_after_me (Custom)" ID="{3FCF863C-E16D-4518-A788-C517AC243435}" ShortID="919418972" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+																<PropertyList>
+																	<Property Name="DryLevel" Type="Real32" Value="-96"/>
+																	<Property Name="SyncDry" Type="bool" Value="False"/>
+																	<Property Name="Voice1FilterFrequency" Type="Real32" Value="182"/>
+																	<Property Name="Voice1FilterType" Type="int32" Value="4"/>
+																	<Property Name="Voice1Gain" Type="Real32" Value="3"/>
+																	<Property Name="Voice1Pitch" Type="Real32" Value="900"/>
+																	<Property Name="Voice2Enable" Type="bool" Value="True"/>
+																	<Property Name="Voice2FilterFrequency" Type="Real32" Value="1570"/>
+																	<Property Name="Voice2FilterType" Type="int32" Value="4"/>
+																	<Property Name="Voice2Gain" Type="Real32" Value="6.5"/>
+																	<Property Name="Voice2Pitch" Type="Real32" Value="1700"/>
+																	<Property Name="WetLevel" Type="Real32" Value="6"/>
+																	<Property Name="WindowSize" Type="int32" Value="3840"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+												<StateInfo>
+													<CustomStateList>
+														<CustomState>
+															<StateRef Name="Sober" ID="{CDF0F790-94E6-4E48-BB64-8758389BA89A}"/>
+															<CustomState Name="" ID="{01BB0E24-43AD-40F4-B7E5-F3E345F95BA4}" ShortID="397778267"/>
+														</CustomState>
+														<CustomState>
+															<StateRef Name="Drunk" ID="{37567E70-3301-4FB3-9395-088E5363523B}"/>
+															<CustomState Name="" ID="{02B1D974-9B82-450C-9FC5-0138182E0D9B}" ShortID="665126644"/>
+														</CustomState>
+													</CustomStateList>
+												</StateInfo>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

@@ -7,7 +7,20 @@ State	ID	Name	State Group			Notes
 	2607556080	Menu	STA_MenuGameplay			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
+	247557814	Foley			\Default Work Unit\Master Audio Bus\SFX\Foley	
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	3648575778	ShotExplosion			\Default Work Unit\Master Audio Bus\SFX\ShotExplosion	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3814383601	Targets			\Default Work Unit\Master Audio Bus\SFX\Targets	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1572913279	RoomVerb			\Default Work Unit\Master Audio Bus\RoomVerb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	602546716	Room_Large	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

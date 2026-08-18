@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1405900730	Switch_Grenade			\Weapons\SwitchEvents\Switch_Grenade	
 	1613706326	Stop_Music_Playlist			\Music\Stop_Music_Playlist	
 	1731193453	bulletImpactEvent			\Weapons\bulletImpactEvent	
+	1817945039	turretFire			\Weapons\turretFire	
 	2249769530	UI_Click			\UI\UI_Click	
 	2310057666	grenadeExplosion			\Weapons\grenadeExplosion	
 	2341031379	TargetSpawn			\Interactables\TargetSpawn	
@@ -48,6 +49,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	54934476	woodslide2	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\55\{55A54172-424E-6D5D-87B5-C464E605556B}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Interactables\AM_Interactable\RND_targetSpawn\woodslide2		97510
 	59402383	GrenadeSwitch_3	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\7E\{7EF283AF-886F-66E3-E6DB-6C0F297F8374}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Weapons\AM_Weapons\SW_WeaponPickup\grenadeSwitch\GrenadeSwitch_3		75936
 	66304737	SniperShot_1	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\7F\{7F93A383-8645-EF54-A0C4-7B0D1D32D3A7}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Weapons\AM_Weapons\SW_Fire\pistolShot\SniperShot_1		34656
+	79690050	TurretHigh	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\BC\{BCE02068-1F1D-FE10-29C8-6D6DECB97603}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Weapons\AM_Weapons\TurretFire\TurretHigh		51968
 	96836893	PistolShot_2	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\38\{38757C8B-B7BE-6266-C9A1-507D70F37D63}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Weapons\AM_Weapons\SW_Fire\sniperShot\PistolShot_2		92960
 	119877578	TargetHit_3	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\AE\{AE74DACD-89C2-C519-7B6C-63AE66CE9230}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Interactables\AM_Interactable\RND_targetHit\TargetHit_3		123584
 	120738465	woodslide6	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\51\{5183BB2A-F2F8-2A37-71A2-B2FDDCAA4EA0}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Interactables\AM_Interactable\RND_targetSpawn\woodslide6		100820
@@ -74,6 +76,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	638456630	SniperShot_3	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\8A\{8A1C32F7-F39A-463C-A12E-B34B3855156A}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Weapons\AM_Weapons\SW_Fire\pistolShot\SniperShot_3		32864
 	643095234	CowTargetBreak	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\7F\{7F41AAB6-8C40-E332-F6FA-796AA374E1DE}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Interactables\AM_Interactable\CowTargetBreak\CowTargetBreak		133054
 	644668777	sniperSwitch	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\EC\{ECDE545B-F6E9-9C22-E269-5AE0F809190C}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Weapons\AM_Weapons\SW_WeaponPickup\sniperSwitch		64096
+	660958099	TurretBoom	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\B6\{B61C2FD0-6DED-D72F-86B2-0B95C84EFEFC}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Weapons\AM_Weapons\TurretFire\TurretBoom		89084
 	661390407	SteelMillAmbience	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\F6\{F6392CC8-A91A-75F6-0072-2B7C03DF5778}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Ambience\Ambience\BL_Ambience\SteelMillAmbience		5600248
 	688455040	woodslide5	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\AC\{AC1394A8-8BB7-E7EE-7E82-8E2AD94FA88F}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Interactables\AM_Interactable\RND_targetSpawn\woodslide5		148484
 	741463803	CowTargetSpawn	C:\Users\Public\Repos\SD115Willow-ShooterImplementation\SuperCoolAmazingShooterGame_WwiseProject\.cache\9E\{9E8B4528-6CF0-EC71-B07E-C6BAABE75A3C}.wem		\Actor-Mixer Hierarchy\UNITYIMPLEMENTATION\Interactables\AM_Interactable\CowTargetSpawn		128912

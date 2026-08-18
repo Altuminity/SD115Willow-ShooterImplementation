@@ -134,7 +134,7 @@ MonoBehaviour:
   genericFireEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bf29113499d1e6b4bbcba9679b01836d, type: 2}
   genericPickupEvent:
     idInternal: 0
     valueGuidInternal: 

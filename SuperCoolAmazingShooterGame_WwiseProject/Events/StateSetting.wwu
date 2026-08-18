@@ -35,6 +35,38 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Drunk" ID="{EE7BBCB1-EC3E-4F3C-A456-D41FDAB42FEB}" ShortID="88778217">
+					<ChildrenList>
+						<Event Name="SetDrunk" ID="{98AA10AD-370D-4653-A212-313C732CC678}">
+							<ChildrenList>
+								<Action Name="" ID="{9057993B-9A66-424E-A781-477DF3D424C2}" ShortID="384516349">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Drunk" ID="{37567E70-3301-4FB3-9395-088E5363523B}" WorkUnitID="{C651325D-EF1D-41C6-A646-661FEAD37D37}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SetSober" ID="{3427077A-0351-43A4-8780-BDC105F1344D}">
+							<ChildrenList>
+								<Action Name="" ID="{BA986034-C8FF-47B0-B86A-D9D9756E84AD}" ShortID="248318386">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sober" ID="{CDF0F790-94E6-4E48-BB64-8758389BA89A}" WorkUnitID="{C651325D-EF1D-41C6-A646-661FEAD37D37}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

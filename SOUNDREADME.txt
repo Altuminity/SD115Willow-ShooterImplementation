@@ -1,6 +1,7 @@
 26/08/18
 - added ambience into the new modified musicambience script
-
+- added reverb to all SFX (technically an effect)
+- added a "drunkmolo" effect that when affected by drunk, makes all the sounds wobbly sounding. states are being set in the drunkeffect script.
 
 26/08/17
 - implemented target break events, and attached them to the DoSound script in the prefabs OnHitDestroy_CowTarget and _Target

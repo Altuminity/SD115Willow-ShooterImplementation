@@ -6,10 +6,6 @@
 				<SoundcasterSession Name="Testing" ID="{45D8853C-805C-48F5-9F54-8C9C2ADA7D29}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Ambience" ID="{4DFF2E96-FE29-4E7E-B9DA-7BA2151D5C90}" WorkUnitID="{5B82C2AB-0658-434A-809F-29B1CD263BAC}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="grenadeExplosion" ID="{F8C2B853-0D97-4B27-9588-D8F687D35D9B}" WorkUnitID="{CD9F1318-579B-4454-BD39-280C8B31656B}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -17,6 +13,7 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Menu" ID="{088F5439-D556-40F6-A113-29B0B4A594F1}"/>
+						<CurrentStateRef Name="Sober" ID="{CDF0F790-94E6-4E48-BB64-8758389BA89A}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Grenade" ID="{BFE6A38E-07A9-466C-8F51-4774C819E152}"/>

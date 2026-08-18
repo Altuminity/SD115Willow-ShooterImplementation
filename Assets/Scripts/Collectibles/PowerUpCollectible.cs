@@ -1,4 +1,5 @@
 using System.Xml.Serialization;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PowerUpCollectible : MonoBehaviour, ICollectible
@@ -7,7 +8,7 @@ public class PowerUpCollectible : MonoBehaviour, ICollectible
     {
         HealthUp,
         FireRateUp,
-        SpeedUp
+        Drunk
     }
 
     public PowerUpType powerType;
@@ -66,8 +67,15 @@ public class PowerUpCollectible : MonoBehaviour, ICollectible
                         }
                         break;
                     }
-                case PowerUpType.SpeedUp:
+                case PowerUpType.Drunk:
                     {
+                        DrunkEffect drunkFX = other.GetComponentInChildren<DrunkEffect>();
+                        if (drunkFX == null) Debug.Log("we fucked up?");
+
+                        if (drunkFX != null)
+                        {
+                            drunkFX.StartDrunkTimer();
+                        }
                         break;
                     }
             }
@@ -75,11 +83,4 @@ public class PowerUpCollectible : MonoBehaviour, ICollectible
             Destroy(gameObject);
         }
     }
-
-    public void SpeedUp(float speedMult, float duration)
-    {
-        //do stuff here
-    }
-
-
 }

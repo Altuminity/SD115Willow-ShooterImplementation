@@ -6,6 +6,11 @@
 				<MusicSwitchContainer Name="MusicSwitch" ID="{2A5A4813-F6FE-4253-B2D1-D4DA6A89C39F}" ShortID="954562483">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="140"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -44,6 +49,9 @@
 									<TransitionInfo/>
 								</MusicTransition>
 							</Custom>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Drunkmolo" ID="{AB816E81-E50F-4F8B-AE86-1C52227B1992}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

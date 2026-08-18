@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
     "Language": "SFX",
-    "Hash": "{A0DC83D2-30FA-676C-F857-42A50E877351}",
+    "Hash": "{456AE36B-19DB-CB1E-D095-9EE5F1B2A9F7}",
     "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -46,6 +46,14 @@
       "Location": "Memory",
       "ShortName": "SniperShot_1.wav",
       "CachePath": "7F/{7F93A383-8645-EF54-A0C4-7B0D1D32D3A7}.wem"
+     },
+     {
+      "Id": "79690050",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TurretHigh.wav",
+      "CachePath": "BC/{BCE02068-1F1D-FE10-29C8-6D6DECB97603}.wem"
      },
      {
       "Id": "96836893",
@@ -254,6 +262,14 @@
       "Location": "Memory",
       "ShortName": "SniperSwitch.wav",
       "CachePath": "EC/{ECDE545B-F6E9-9C22-E269-5AE0F809190C}.wem"
+     },
+     {
+      "Id": "660958099",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TurretBoom.wav",
+      "CachePath": "B6/{B61C2FD0-6DED-D72F-86B2-0B95C84EFEFC}.wem"
      },
      {
       "Id": "661390407",
@@ -940,6 +956,23 @@
       }
      },
      {
+      "Id": "1817945039",
+      "Name": "turretFire",
+      "ObjectPath": "\\Events\\Weapons\\turretFire",
+      "GUID": "{C3CCB8D0-52A1-4E69-966C-D4C53D1DB886}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.54033333",
+      "DurationMax": "0.54033333",
+      "MediaRefs": [
+       {
+        "Id": "79690050"
+       },
+       {
+        "Id": "660958099"
+       }
+      ]
+     },
+     {
       "Id": "2249769530",
       "Name": "UI_Click",
       "ObjectPath": "\\Events\\UI\\UI_Click",
@@ -1035,6 +1068,6 @@
     ]
    }
   ],
-  "FileHash": "{137FA08D-3A8D-B89D-5182-406C71D07130}"
+  "FileHash": "{0B68B950-AAF4-7BB2-D666-5396BAFD0054}"
  }
 }

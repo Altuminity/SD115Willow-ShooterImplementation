@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C651325D-EF1D-41C6-A646-661FEAD37D37}" SchemaVersion="123">
+	<States>
+		<WorkUnit Name="Drunk" ID="{C651325D-EF1D-41C6-A646-661FEAD37D37}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="DrunkState" ID="{3E9E9565-CF6A-4B36-A7E8-487FBFAA5032}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{8FFBBA68-8A6B-4956-8F4D-D2939EB03F73}"/>
+						<State Name="Sober" ID="{CDF0F790-94E6-4E48-BB64-8758389BA89A}"/>
+						<State Name="Drunk" ID="{37567E70-3301-4FB3-9395-088E5363523B}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

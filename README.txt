@@ -1,6 +1,8 @@
 26/08/18
-- added a dumb script to add score when the sentry is destroyed (there are probably an infitismal amount of ways for this to be implemented better)
+- added a dumb script to add score when the sentry is destroyed (there are probably an infinite amount of ways for this to be implemented better)
 - modified the music script to include ambience since they start and stop at the same points anyway.
+- added a new power-up (power-down?) drunk effect! it wobbles the screen and the audio (SEE AUDIO README) (additionally added shaders, a urp specific renderer, etc etc)
+- changed speedup in the powerup script to drunk and implemented hookups there for drunk effect
 
 26/08/17
 - added blue collectible spawners that spawn a shotgun, sniper, grenade launcher, or a health pack continuously

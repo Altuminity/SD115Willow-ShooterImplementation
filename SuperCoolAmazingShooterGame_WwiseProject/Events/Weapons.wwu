@@ -135,6 +135,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="turretFire" ID="{C3CCB8D0-52A1-4E69-966C-D4C53D1DB886}">
+					<ChildrenList>
+						<Action Name="" ID="{9FB08BE1-A1EE-4B4B-944B-313A93A1C5C4}" ShortID="640403461">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TurretFire" ID="{A34715E5-95A9-4DAF-B4CD-6A9B7CC6613C}" WorkUnitID="{0ACA7227-4770-412D-86D7-E7C75E39E5A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

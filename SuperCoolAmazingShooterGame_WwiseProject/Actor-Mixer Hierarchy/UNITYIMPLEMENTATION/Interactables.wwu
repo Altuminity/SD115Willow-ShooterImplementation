@@ -11,6 +11,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Targets" ID="{3AED2050-85DD-49E3-81B4-C821483AE2F5}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Drunkmolo" ID="{AB816E81-E50F-4F8B-AE86-1C52227B1992}" WorkUnitID="{530001DB-F5FC-4E19-BBF9-09F1D895416F}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="RND_targetHit" ID="{43CC546A-0F77-43DF-B05E-84BB8431CD42}" ShortID="636307807">
