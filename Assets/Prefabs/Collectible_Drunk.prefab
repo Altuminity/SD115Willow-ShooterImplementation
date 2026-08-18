@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4437045565132417379}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 6.613}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -49,7 +49,6 @@ MonoBehaviour:
   powerType: 2
   healingAmount: 100
   fireRateUpAmount: 0.01
-  drunkFX: {fileID: 0}
 --- !u!135 &2665410174120953492
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -69,8 +68,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.65
-  m_Center: {x: 0, y: 1.33, z: 0}
+  m_Radius: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &5591259336207561161
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +97,7 @@ Transform:
   m_GameObject: {fileID: 5591259336207561161}
   serializedVersion: 2
   m_LocalRotation: {x: -0.2656382, y: -0, z: -0, w: 0.9640728}
-  m_LocalPosition: {x: 0, y: 1.331, z: -0.003}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

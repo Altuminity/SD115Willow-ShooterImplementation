@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	278617630	Play_Ambience			\Ambience\Play_Ambience	
 	687305845	SetMenuState			\StateSetting\MenuGameplay\SetMenuState	
 	775900504	SetGameState			\StateSetting\MenuGameplay\SetGameState	
+	832140428	SetSober			\StateSetting\Drunk\SetSober	
 	1175795581	Switch_Pistol			\Weapons\SwitchEvents\Switch_Pistol	
 	1286217182	Switch_Shotgun			\Weapons\SwitchEvents\Switch_Shotgun	
 	1319191442	CowTargetBreak			\Interactables\CowTargetBreak	
@@ -18,6 +19,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3562493961	Switch_Sniper			\Weapons\SwitchEvents\Switch_Sniper	
 	3822001633	TargetHit			\Interactables\TargetHit	
 	3945810658	CowTargetSpawn			\Interactables\CowTargetSpawn	
+	4256479967	SetDrunk			\StateSetting\Drunk\SetDrunk	
 	4264879856	Play_Music_Playlist			\Music\Play_Music_Playlist	
 	4283052285	TestTone			\TestTone\TestTone	
 

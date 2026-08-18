@@ -1,10 +1,14 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1862888325	STA_MenuGameplay			\MenuGameplay\STA_MenuGameplay	
+	2850811376	DrunkState			\Drunk\DrunkState	
 
 State	ID	Name	State Group			Notes
 	89505537	Gameplay	STA_MenuGameplay			
 	748895195	None	STA_MenuGameplay			
 	2607556080	Menu	STA_MenuGameplay			
+	742942230	Sober	DrunkState			
+	748895195	None	DrunkState			
+	2743384229	Drunk	DrunkState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
@@ -18,9 +22,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1572913279	RoomVerb			\Default Work Unit\Master Audio Bus\RoomVerb	
+	3417368026	Drunkmolo			\Default Work Unit\Master Audio Bus\Drunkmolo	
 
 Effect plug-ins	ID	Name	Type				Notes
+	168349082	Fast_LF_Tremolo (Custom)	Wwise Tremolo			
 	602546716	Room_Large	Wwise RoomVerb			
+	919418972	Repeat_after_me (Custom)	Wwise Harmonizer			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

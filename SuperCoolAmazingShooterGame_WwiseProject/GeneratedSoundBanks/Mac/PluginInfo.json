@@ -18,6 +18,20 @@
     "StaticLib": "AkRoomVerbFX"
    },
    {
+    "LibName": "Wwise Tremolo",
+    "LibId": "8585219",
+    "Type": "Effect",
+    "DLL": "AkTremolo",
+    "StaticLib": "AkTremoloFX"
+   },
+   {
+    "LibName": "Wwise Harmonizer",
+    "LibId": "9043971",
+    "Type": "Effect",
+    "DLL": "AkHarmonizer",
+    "StaticLib": "AkHarmonizerFX"
+   },
+   {
     "LibName": "System",
     "LibId": "11403271",
     "Type": "AudioDevice"
@@ -28,6 +42,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{CA0BD364-35A3-27BE-E433-B49848ED0F89}"
+  "FileHash": "{3926AFF9-67F3-AB04-B488-AF4C386675FD}"
  }
 }

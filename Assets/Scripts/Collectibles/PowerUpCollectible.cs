@@ -11,6 +11,7 @@ public class PowerUpCollectible : MonoBehaviour, ICollectible
         Drunk
     }
 
+
     public PowerUpType powerType;
     public float perkDuration => 10f;
 
@@ -74,7 +75,7 @@ public class PowerUpCollectible : MonoBehaviour, ICollectible
 
                         if (drunkFX != null)
                         {
-                            drunkFX.StartDrunkTimer();
+                            drunkFX.StartDrunkTimer(perkDuration);
                         }
                         break;
                     }

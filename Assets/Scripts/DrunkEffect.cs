@@ -17,31 +17,35 @@ public class DrunkEffect : MonoBehaviour
 
     [Header("Drunk Collectible Stuff")]
     private float perkTimer;
-    public float perkDuration;
 
     [Header("Drunk Wwise Stuff")]
-    public AK.Wwise.Event setDrunkState;
+    public AK.Wwise.Event setDrunk;
+    public AK.Wwise.Event setSober;
 
     private void Start()
     {
         SetFrequency(0f);
+        SetShift(0f);
+        setSober.Post(gameObject);
     }
 
     private void Update()
     {
         if(perkTimer > 0f)
         {
+            setDrunk.Post(gameObject);
             StartDrunk();
             perkTimer -= Time.deltaTime;
             if(perkTimer <= 0f)
             {
+                setSober.Post(gameObject);
                 StopDrunk();
                 perkTimer = 0f;
             }
         }
     }
 
-    public void StartDrunkTimer()
+    public void StartDrunkTimer(float perkDuration)
     {
         perkTimer = perkDuration;
     }

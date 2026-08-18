@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: db010053fcf5194ebbf909f1d895416f
     GuidInternal: 
-    m_lastTime: -8584145560331933758
+    m_lastTime: -8584145468265180265
     List:
     - name: Ambience
       guid: a0e44616b5fb074bbf6f6e131b64f086
@@ -57,6 +57,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: a0e44616b5fb074bbf6f6e131b64f086
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience
+    - name: Drunkmolo
+      guid: 816e81ab0fe58b4fae861c52227b1992
+      id: 3417368026
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: db010053fcf5194ebbf909f1d895416f
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Drunkmolo
+        ObjectType: 1
+        guid: 816e81ab0fe58b4fae861c52227b1992
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Drunkmolo
     - name: Foley
       guid: ab74ec24c00751489a2c67d9dedd7034
       id: 247557814
@@ -440,8 +457,25 @@ MonoBehaviour:
     ParentPath: Events\StateSetting
     guid: e6969d9e510a6f41bba37233d6044040
     GuidInternal: 
-    m_lastTime: -8584147654533598480
+    m_lastTime: -8584145467156997343
     List:
+    - name: Drunk
+      guid: b1bc7bee3eec3c4fa456d41fdab42feb
+      id: 2743384229
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: StateSetting
+        ObjectType: 12
+        guid: e6969d9e510a6f41bba37233d6044040
+      - ElementName: Drunk
+        ObjectType: 4
+        guid: b1bc7bee3eec3c4fa456d41fdab42feb
+      Path: Events\StateSetting\Drunk
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: MenuGameplay
       guid: 595e11bda1436644a7c704340df3b80b
       id: 208142260
@@ -459,6 +493,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: SetDrunk
+      guid: ad10aa980d375346a212313c732cc678
+      id: 4256479967
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: StateSetting
+        ObjectType: 12
+        guid: e6969d9e510a6f41bba37233d6044040
+      - ElementName: Drunk
+        ObjectType: 4
+        guid: b1bc7bee3eec3c4fa456d41fdab42feb
+      - ElementName: SetDrunk
+        ObjectType: 3
+        guid: ad10aa980d375346a212313c732cc678
+      Path: Events\StateSetting\Drunk\SetDrunk
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: SetGameState
       guid: 594e290774c9bc4780c58d973c29730c
       id: 775900504
@@ -496,6 +550,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: d1c9b77f1e566440bbcbe1cb54821b93
       Path: Events\StateSetting\MenuGameplay\SetMenuState
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SetSober
+      guid: 7a0727345103a4438780bdc105f1344d
+      id: 832140428
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: StateSetting
+        ObjectType: 12
+        guid: e6969d9e510a6f41bba37233d6044040
+      - ElementName: Drunk
+        ObjectType: 4
+        guid: b1bc7bee3eec3c4fa456d41fdab42feb
+      - ElementName: SetSober
+        ObjectType: 3
+        guid: 7a0727345103a4438780bdc105f1344d
+      Path: Events\StateSetting\Drunk\SetSober
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -809,6 +883,69 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584147654525591570
     List: []
+  - PhysicalPath: States\Drunk.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Drunk
+      ObjectType: 12
+      guid: 5d3251c61defc641a646661fead37d37
+    ParentPath: States\Drunk
+    guid: 5d3251c61defc641a646661fead37d37
+    GuidInternal: 
+    m_lastTime: -8584145454635137091
+    List:
+    - name: DrunkState
+      guid: 65959e3e6acf364ba7e8487fbfaa5032
+      id: 2850811376
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Drunk
+        ObjectType: 12
+        guid: 5d3251c61defc641a646661fead37d37
+      - ElementName: DrunkState
+        ObjectType: 9
+        guid: 65959e3e6acf364ba7e8487fbfaa5032
+      Path: States\Drunk\DrunkState
+      values:
+      - name: Drunk
+        guid: 707e56370133b34f9395088e5363523b
+        id: 2743384229
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Drunk
+          ObjectType: 12
+          guid: 5d3251c61defc641a646661fead37d37
+        - ElementName: DrunkState
+          ObjectType: 9
+          guid: 65959e3e6acf364ba7e8487fbfaa5032
+        - ElementName: Drunk
+          ObjectType: 8
+          guid: 707e56370133b34f9395088e5363523b
+      - name: Sober
+        guid: 90f7f0cde694484ebb648758389ba89a
+        id: 742942230
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Drunk
+          ObjectType: 12
+          guid: 5d3251c61defc641a646661fead37d37
+        - ElementName: DrunkState
+          ObjectType: 9
+          guid: 65959e3e6acf364ba7e8487fbfaa5032
+        - ElementName: Sober
+          ObjectType: 8
+          guid: 90f7f0cde694484ebb648758389ba89a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: States\MenuGameplay.wwu
     PathAndIcons:
     - ElementName: States
@@ -820,7 +957,7 @@ MonoBehaviour:
     ParentPath: States\MenuGameplay
     guid: 8ff6034628c725498a4f1d112b058e1c
     GuidInternal: 
-    m_lastTime: -8584147654525581521
+    m_lastTime: -8584145454436674331
     List:
     - name: STA_MenuGameplay
       guid: c90d3ddc566e1348861312cf597553d5
@@ -1012,7 +1149,7 @@ MonoBehaviour:
     m_lastTime: -8584147654525551361
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000080000000a0000000c0000000e000000100000001100000015000000180000001b0000001d0000001f0000005e000000600000006a000000cb000000cd000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000a0000000c0000000e0000001000000011000000120000001300000015000000180000001b0000001d0000001f0000005e000000600000006a000000cb000000cd000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

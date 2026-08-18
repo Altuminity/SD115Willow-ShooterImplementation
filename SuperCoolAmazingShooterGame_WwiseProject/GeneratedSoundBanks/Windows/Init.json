@@ -10,11 +10,29 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{322CE977-40E3-92FA-FD97-386287FA888B}",
+    "Hash": "{B0381827-2FE9-C7C1-B9B8-6A32DE499641}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "168349082",
+       "Name": "Fast_LF_Tremolo (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo\\[Effect Slot [0]: (Tremolo)]\\Fast_LF_Tremolo (Custom)",
+       "GUID": "{33F77BC3-019C-41C0-B40C-42F06D98463E}",
+       "LibName": "Wwise Tremolo",
+       "LibId": "8585219"
+      },
+      {
+       "Id": "919418972",
+       "Name": "Repeat_after_me (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo\\[Effect Slot [1]: (Harmonizer)]\\Repeat_after_me (Custom)",
+       "GUID": "{3FCF863C-E16D-4518-A788-C517AC243435}",
+       "LibName": "Wwise Harmonizer",
+       "LibId": "9043971"
+      }
+     ],
      "ShareSets": [
       {
        "Id": "602546716",
@@ -115,6 +133,22 @@
         }
        ]
       }
+     },
+     {
+      "Id": "3417368026",
+      "Name": "Drunkmolo",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+      "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "168349082"
+        },
+        {
+         "Id": "919418972"
+        }
+       ]
+      }
      }
     ],
     "GameParameters": [
@@ -149,6 +183,32 @@
         "Name": "Menu",
         "ObjectPath": "\\States\\MenuGameplay\\STA_MenuGameplay\\Menu",
         "GUID": "{088F5439-D556-40F6-A113-29B0B4A594F1}"
+       }
+      ]
+     },
+     {
+      "Id": "2850811376",
+      "Name": "DrunkState",
+      "ObjectPath": "\\States\\Drunk\\DrunkState",
+      "GUID": "{3E9E9565-CF6A-4B36-A7E8-487FBFAA5032}",
+      "States": [
+       {
+        "Id": "742942230",
+        "Name": "Sober",
+        "ObjectPath": "\\States\\Drunk\\DrunkState\\Sober",
+        "GUID": "{CDF0F790-94E6-4E48-BB64-8758389BA89A}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Drunk\\DrunkState\\None",
+        "GUID": "{8FFBBA68-8A6B-4956-8F4D-D2939EB03F73}"
+       },
+       {
+        "Id": "2743384229",
+        "Name": "Drunk",
+        "ObjectPath": "\\States\\Drunk\\DrunkState\\Drunk",
+        "GUID": "{37567E70-3301-4FB3-9395-088E5363523B}"
        }
       ]
      }
@@ -189,6 +249,6 @@
     ]
    }
   ],
-  "FileHash": "{7B091C2C-C609-53BC-B61A-D3BADA7BD91D}"
+  "FileHash": "{8DBDB5A8-4983-8FAC-7E97-06EC902DD865}"
  }
 }

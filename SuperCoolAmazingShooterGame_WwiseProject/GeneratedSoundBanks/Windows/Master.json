@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{75783A3C-EBCC-448D-8E6E-E9026EAA699E}",
     "Language": "SFX",
-    "Hash": "{456AE36B-19DB-CB1E-D095-9EE5F1B2A9F7}",
+    "Hash": "{6C6E652B-0C1F-61A5-ADBB-982C0B9333FC}",
     "ObjectPath": "\\SoundBanks\\MasterSoundbankUnit\\Master",
     "ShortName": "Master",
     "Path": "Master.bnk",
@@ -426,6 +426,14 @@
        {
         "Id": "281392890"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
+       }
       ]
      },
      {
@@ -450,6 +458,14 @@
        {
         "Id": "831773710"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
+       }
       ]
      },
      {
@@ -464,6 +480,14 @@
       "MediaRefs": [
        {
         "Id": "741463803"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
        }
       ]
      },
@@ -572,6 +596,14 @@
       "DurationType": "OneShot",
       "DurationMin": "0.5940115",
       "DurationMax": "0.9907598",
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -649,6 +681,14 @@
        {
         "Id": "171313435"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
+       }
       ]
      },
      {
@@ -664,6 +704,14 @@
        {
         "Id": "661390407"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
+       }
       ]
      },
      {
@@ -672,6 +720,14 @@
       "ObjectPath": "\\Events\\Music\\Play_Music_Playlist",
       "GUID": "{59D085A9-141B-41A0-ADED-861FBFF60C16}",
       "DurationType": "Infinite",
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -733,6 +789,25 @@
       ]
      },
      {
+      "Id": "4256479967",
+      "Name": "SetDrunk",
+      "ObjectPath": "\\Events\\StateSetting\\Drunk\\SetDrunk",
+      "GUID": "{98AA10AD-370D-4653-A212-313C732CC678}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "2850811376",
+        "Id": "2743384229",
+        "Name": "Drunk",
+        "ObjectPath": "\\States\\Drunk\\DrunkState\\Drunk",
+        "GUID": "{37567E70-3301-4FB3-9395-088E5363523B}"
+       }
+      ]
+     },
+     {
       "Id": "775900504",
       "Name": "SetGameState",
       "ObjectPath": "\\Events\\StateSetting\\MenuGameplay\\SetGameState",
@@ -767,6 +842,25 @@
         "Name": "Menu",
         "ObjectPath": "\\States\\MenuGameplay\\STA_MenuGameplay\\Menu",
         "GUID": "{088F5439-D556-40F6-A113-29B0B4A594F1}"
+       }
+      ]
+     },
+     {
+      "Id": "832140428",
+      "Name": "SetSober",
+      "ObjectPath": "\\Events\\StateSetting\\Drunk\\SetSober",
+      "GUID": "{3427077A-0351-43A4-8780-BDC105F1344D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "2850811376",
+        "Id": "742942230",
+        "Name": "Sober",
+        "ObjectPath": "\\States\\Drunk\\DrunkState\\Sober",
+        "GUID": "{CDF0F790-94E6-4E48-BB64-8758389BA89A}"
        }
       ]
      },
@@ -812,6 +906,14 @@
         "Id": "1016104414"
        }
       ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
+       }
+      ],
       "ActionSetSwitch": [
        {
         "GroupId": "2593986681",
@@ -833,6 +935,14 @@
       "MediaRefs": [
        {
         "Id": "398777468"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
        }
       ],
       "ActionSetSwitch": [
@@ -858,6 +968,14 @@
         "Id": "195799463"
        }
       ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
+       }
+      ],
       "ActionSetSwitch": [
        {
         "GroupId": "2593986681",
@@ -879,6 +997,14 @@
       "MediaRefs": [
        {
         "Id": "644668777"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
        }
       ],
       "ActionSetSwitch": [
@@ -910,6 +1036,14 @@
        {
         "Id": "831773710"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
+       }
       ]
      },
      {
@@ -936,6 +1070,14 @@
        },
        {
         "Id": "688455040"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
        }
       ]
      },
@@ -969,6 +1111,14 @@
        },
        {
         "Id": "660958099"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3417368026",
+        "Name": "Drunkmolo",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Drunkmolo",
+        "GUID": "{AB816E81-E50F-4F8B-AE86-1C52227B1992}"
        }
       ]
      },
@@ -1030,6 +1180,32 @@
         "GUID": "{088F5439-D556-40F6-A113-29B0B4A594F1}"
        }
       ]
+     },
+     {
+      "Id": "2850811376",
+      "Name": "DrunkState",
+      "ObjectPath": "\\States\\Drunk\\DrunkState",
+      "GUID": "{3E9E9565-CF6A-4B36-A7E8-487FBFAA5032}",
+      "States": [
+       {
+        "Id": "742942230",
+        "Name": "Sober",
+        "ObjectPath": "\\States\\Drunk\\DrunkState\\Sober",
+        "GUID": "{CDF0F790-94E6-4E48-BB64-8758389BA89A}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Drunk\\DrunkState\\None",
+        "GUID": "{8FFBBA68-8A6B-4956-8F4D-D2939EB03F73}"
+       },
+       {
+        "Id": "2743384229",
+        "Name": "Drunk",
+        "ObjectPath": "\\States\\Drunk\\DrunkState\\Drunk",
+        "GUID": "{37567E70-3301-4FB3-9395-088E5363523B}"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -1068,6 +1244,6 @@
     ]
    }
   ],
-  "FileHash": "{70EE48BD-B84A-9E58-6B42-C8F538F6B659}"
+  "FileHash": "{8A7E8CA8-BE42-A180-6BAD-CDFF59345C8A}"
  }
 }
